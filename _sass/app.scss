@@ -1,8 +1,18 @@
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import "bootstrap";
+$navbar-height: 100px;
+$navbar-default-bg: #fff;
+$navbar-default-color: #5d6166;
+$navbar-default-link-color: $navbar-default-color;
+
+@mixin font-size($font-size) {
+  font-size: $font-size;
+  line-height: floor(($font-size * $line-height-base));
+}
+
+@import
+  "bootstrap/variables",
+  "bootstrap/mixins",
+  "bootstrap",
+  "layout/header"
+;

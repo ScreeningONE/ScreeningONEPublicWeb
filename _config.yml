@@ -1,8 +1,5 @@
-# Site settings
-title: Screening One
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-
+markdown: kramdown
+highlighter: null
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -11,10 +8,3 @@ exclude:
   - .env
   - .*.env
 host: 0.0.0.0
-
-# Build settings
-markdown: kramdown
-highlighter: null
-
-sass:
-  sass_dir: _sass

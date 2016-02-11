@@ -1,0 +1,23 @@
+.navbar {
+  border: 0;
+}
+
+.navbar-brand {
+  width: 280px;
+  height: 100px;
+  background: url('../images/logo.png') no-repeat center;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-phone {
+  display: inline-block;
+  vertical-align: middle;
+  padding: $navbar-padding-vertical 0;
+  @include font-size(16px);
+}
+
+.navbar-nav {
+  font-weight: 600;
+  @include font-size(15px);
+}
