@@ -1,12 +1,11 @@
+---
+---
 @charset "utf-8";
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+/**
+ * Faster SASS Compilation using node-sass (libsass)
+ * node-sass --output-style compressed _sass/app.scss _site/css/main.css
+ * use -w to watch
+ */
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-  "bootstrap"
-;
+@import "app";

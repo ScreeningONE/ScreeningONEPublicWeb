@@ -8,8 +8,13 @@ exclude:
   - Gemfile.lock
   - bin
   - README.md
+  - .env
+  - .*.env
 host: 0.0.0.0
 
 # Build settings
 markdown: kramdown
 highlighter: null
+
+sass:
+  sass_dir: _sass
