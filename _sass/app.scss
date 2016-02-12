@@ -1,9 +1,26 @@
+@import "bootstrap/variables", "bootstrap/mixins";
+
 $font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$brand-primary: #8f4db6;
+$grid-float-breakpoint: 1080px;
+$icon-sprite: "../images/icons.png";
+$grid-columns: 24;
 
 $navbar-height: 100px;
 $navbar-default-bg: #fff;
 $navbar-default-color: #5d6166;
 $navbar-default-link-color: $navbar-default-color;
+$navbar-padding-vertical: 0;
+$navbar-default-link-active-bg: $navbar-default-bg;
+
+$btn-font-weight: 700;
+$btn-default-color: $brand-primary;
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: transparent;
+$btn-border-radius-base: 15px;
+
+$footer-color: #404950;
 
 @mixin font-size($font-size) {
   font-size: $font-size;
@@ -11,8 +28,8 @@ $navbar-default-link-color: $navbar-default-color;
 }
 
 @import
-  "bootstrap/variables",
-  "bootstrap/mixins",
   "bootstrap",
-  "layout/header"
+  "layout/layout",
+  "layout/header",
+  "layout/footer"
 ;

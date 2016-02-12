@@ -1,0 +1,6 @@
+.container {
+  @media(min-width: $grid-float-breakpoint) {
+    width: 1170px;
+    max-width: 100%;
+  }
+}
