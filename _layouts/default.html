@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body class="{% if page.pageClass %}page {{ page.pageClass }}{% endif %}">
-
     {% include header.html %}
 
     {{ content }}
 
     {% include footer.html %}
-
   </body>
-
 </html>
