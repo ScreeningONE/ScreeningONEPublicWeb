@@ -1,0 +1,61 @@
+.request-callback {
+  text-align: center;
+  padding: 30px 0;
+  background: #fff;
+
+  label {
+    display: inline-block;
+    font-weight: 300;
+    color: #364f70;
+    font-size: 32px;
+  }
+
+  input {
+    vertical-align: middle;
+    display: inline-block;
+    font-weight: 400;
+    border: 0;
+    outline: 0;
+    margin-top: -6px;
+    background: transparent;
+    height: auto;
+    border-left: 1px solid #000;
+    -webkit-animation: fake-blinking-cursor 1s infinite;
+    animation: fake-blinking-cursor 1s infinite;
+
+    &:focus {
+      animation: initial;
+      border-left-color: transparent;
+    }
+  }
+}
+
+@-webkit-keyframes fake-blinking-cursor {
+  0% {
+    border-left-color: #000;
+  }
+  1% {
+    border-left-color: transparent;
+  }
+  49% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: #000;
+  }
+}
+
+@keyframes fake-blinking-cursor {
+  0% {
+    border-left-color: #000;
+  }
+  1% {
+    border-left-color: transparent;
+  }
+  49% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: #000;
+  }
+}

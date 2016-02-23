@@ -2,10 +2,6 @@
 ---
 @charset "utf-8";
 
-/**
- * Faster SASS Compilation using node-sass (libsass)
- * node-sass --output-style compressed _sass/app.scss _site/css/main.css
- * use -w to watch
- */
-
-@import "app";
+@import
+  "app"
+;

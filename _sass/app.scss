@@ -1,6 +1,8 @@
+
 @import "bootstrap/variables", "bootstrap/mixins";
 
 $font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-base: $font-family-sans-serif;
 $brand-primary: #8f4db6;
 $grid-float-breakpoint: 1080px;
 $icon-sprite: "../images/icons.png";
@@ -18,7 +20,7 @@ $btn-default-color: $brand-primary;
 $btn-primary-color: #fff;
 $btn-primary-bg: $brand-primary;
 $btn-primary-border: transparent;
-$btn-border-radius-base: 15px;
+$btn-border-radius-base: 20px;
 
 $footer-color: #404950;
 
@@ -28,8 +30,22 @@ $footer-color: #404950;
 }
 
 @import
-  "bootstrap",
-  "layout/layout",
+  "bootstrap"
+;
+
+@import
   "layout/header",
-  "layout/footer"
+  "layout/footer",
+  "layout/layout"
+;
+
+@import
+  "partials/hero",
+  "partials/accreditations",
+  "partials/color-strip",
+  "partials/request-callback"
+;
+
+@import
+  "page/home"
 ;

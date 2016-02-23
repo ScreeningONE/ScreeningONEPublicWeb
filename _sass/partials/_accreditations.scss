@@ -1,0 +1,56 @@
+$accreditations-bg: #f5f8fb;
+$accreditations-text-color: #364f70;
+
+.accreditations {
+  background: $accreditations-bg;
+  text-align: center;
+  padding: 30px 0 15px;
+
+  .title {
+    font-weight: bold;
+    color: $accreditations-text-color;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .logos {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0;
+
+    li {
+      list-style: none;
+      padding: 0;
+      margin: 15px;
+      vertical-align: middle;
+      display: inline-block;
+      background-image: url('../images/accreditations.png');
+      background-repeat: no-repeat;
+
+      &.dropbox {
+        background-position: -21px -11px;
+        width: 161px;
+        height: 36px;
+      }
+
+      &.cloudflare {
+        background-position: -216px 0;
+        width: 116px;
+        height: 49px;
+      }
+
+      &.evernote {
+        background-position: 0 -60px;
+        width: 179px;
+        height: 44px;
+      }
+
+      &.shopify {
+        background-position: -206px -58px;
+        width: 146px;
+        height: 42px;
+      }
+    }
+  }
+}

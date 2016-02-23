@@ -1,0 +1,24 @@
+$color-strip-colors: #5b318d, #7c59a4, #c0a02f, #e1e1e1;
+
+.color-strip {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+
+  li {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 25%;
+    height: 13px;
+    
+    @for $i from 1 through length($color-strip-colors) {
+      $c: nth($color-strip-colors, $i);
+
+      &:nth-child(#{$i}) {
+        background: $c;
+      }
+    }
+  }
+}

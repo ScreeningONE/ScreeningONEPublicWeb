@@ -1,0 +1,364 @@
+/**
+ * .full-suite-testing-solutions
+ * .pre-employment-screening
+ * .popular-features
+ * .social-feedback
+ */
+
+.page.home {
+  @include hero-bg('home-hero.png');
+  overflow-x: hidden;
+}
+
+.full-suite-testing-solutions {
+  background: #fff;
+  padding: 30px 0;
+
+  @media(min-width: $screen-md-min) {
+    padding: 50px 0 60px;
+  }
+
+  .header, .footer {
+    text-align: center;
+  }
+  
+  .header {
+    h2.title {
+      @include font-size(26px);
+      font-weight: 300;
+      margin: 0;
+
+      @media(min-width: $screen-sm-min) {
+        @include font-size(32px);
+      }
+    }
+
+    .desc {
+      @include font-size(16px);
+      margin-bottom: 50px;
+
+      @media(min-width: $screen-sm-min) {
+        @include font-size(20px);
+      }
+    }
+  }
+
+  .lists {
+    width: 460px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media(min-width: $screen-sm-min) {
+      width: 100%;
+    }
+
+    .featured {
+      margin: 0 15px 0 0;
+      width: 80px;
+      height: 80px;
+      background: black;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 50%;
+      float: left;
+      position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        width: 28px;
+        height: 28px;
+        border: 2px solid #f5f8fb;
+        border-radius: 50%;
+        background: $brand-primary;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: 5px;
+        background: url($icon-sprite) no-repeat -59px -102px;
+        width: 13px;
+        height: 12px;
+      }
+
+      &.featured-1 {
+        background-image: url('../images/featured-1.png')
+      }
+
+      &.featured-2 {
+        background-image: url('../images/featured-2.png')
+      }
+
+      &.featured-3 {
+        background-image: url('../images/featured-3.png')
+      }
+    }
+
+    .title {
+      @include font-size(20px);
+      font-weight: 600;
+      margin: 11px 0 0 100px;
+
+      &:after {
+        content: "";
+        display: block;
+        clear: both;
+        float: none;
+      }
+    }
+
+    .desc {
+      margin: 15px 0 30px;
+
+      p {
+        @include font-size(15px);
+      }
+    }
+  }
+
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+.pre-employment-screening {
+  background: #f5f8fb;
+  padding: 30px 0;
+  color: #364f70;
+  min-height: 520px;
+  text-align: center;
+
+  @media(min-width: $screen-md-min) {
+    margin: 30px 0;
+    padding: 70px 0;
+    text-align: left;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .fingerprint {
+    background: url('../images/finger-print.png') no-repeat;
+    width: 123px;
+    height: 123px;
+    margin: 0 auto;
+
+    @media(min-width: $screen-md-min) {
+      margin: 0 0 0 50px;
+    }
+  }
+
+  .small-title {
+    @include font-size(14px);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0 10px;
+  }
+
+  h2.title {
+    margin: 0 0 20px;
+    font-weight: 300;
+    font-size: 32px;
+  }
+
+  .desc {
+    width: 480px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    @media(min-width: $screen-md-min) {
+      margin: 0;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 160%;
+    }
+  }
+
+  .employment-chart {
+    background: url('../images/screenshot/employment-chart.png') no-repeat;
+    max-width: 100%;
+    background-size: contain;
+    background-position: center;
+    width: 72.3vw;
+    height: 54vw;
+    margin: 30px auto 0;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
+
+    @media(min-width: $screen-md-min) {
+      width: 775px;
+      height: 580px;
+      margin: 0;
+      max-width: initial;
+      position: absolute;
+      top: -100px;
+    }
+  }
+}
+
+.popular-features {
+  padding: 50px 0;
+  background: #fff;
+
+  .header {
+    margin-bottom: 30px;
+
+    h2.title {
+      font-weight: 300;
+      margin: 0 0 15px;
+      text-align: center;
+    }
+
+    .desc {
+      width: 500px;
+      margin: 0 auto;
+
+      p {
+        @include font-size(16px);
+        text-align: center;
+      }
+    }
+  }
+
+  .lists {
+    .featured {
+      width: 78px;
+      height: 78px;
+      background: #000;
+      margin-bottom: 15px;
+      border-radius: 50%;
+      position: relative;
+
+      &:after {
+        content: "";
+        background: url('../images/popular-feature-icons.png') no-repeat;
+        display: block;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      &.featured-1 {
+        background: #8f4db6;
+
+        &:after {
+          background-position: -1px 0;
+          width: 49px;
+          height: 49px;
+        }
+      }
+
+      &.featured-2 {
+        background: #31358d;
+
+        &:after {
+          background-position: -65px -6px;
+          width: 45px;
+          height: 37px;
+        }
+      }
+
+      &.featured-3 {
+        background: #32628d;
+
+        &:after {
+          background-position: 0 -60px;
+          width: 52px;
+          height: 52px;
+        }
+      }
+
+      &.featured-4 {
+        background: #328d8a;
+
+        &:after {
+          background-position: -67px -65px;
+          width: 41px;
+          height: 41px;
+        }
+      }
+    }
+
+    .title {
+      @include font-size(13px);
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #364f70;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .desc {
+      margin-bottom: 30px;
+
+      p {
+        font-size: 16px;
+        line-height: 170%;
+      }
+    }
+  }
+}
+
+.social-feedback {
+  background: #f5f8fb;
+  text-align: center;
+  padding: 70px 0;
+  color: #364f70;
+
+  .small-title {
+    @include font-size(14px);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  h2.title {
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .desc {
+    margin: 20px 0 30px;
+
+    p {
+      @include font-size(16px);
+    }
+  }
+
+  .tweets {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+
+    li {
+      display: inline-block;
+      text-align: left;
+      opacity: 0.3;
+
+      &.selected {
+        opacity: 1;
+
+        &:first-child {
+          margin-left: calc(50% - 250px);
+        }
+      }
+    }
+  }
+}

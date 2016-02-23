@@ -7,4 +7,5 @@ exclude:
   - README.md
   - .env
   - .*.env
+  - s3_website.yml
 host: 0.0.0.0

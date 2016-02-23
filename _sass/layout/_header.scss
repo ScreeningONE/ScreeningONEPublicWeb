@@ -2,6 +2,7 @@ $custom-navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2);
 
 .navbar {
   border: 0;
+  margin: 0;
 }
 
 .navbar-brand {
@@ -18,7 +19,7 @@ $custom-navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2);
   padding: $custom-navbar-padding-vertical 0;
 
   @media(min-width: $screen-lg-min) {
-    @include font-size(16px);
+    @include font-size(15px);
   }
 }
 
@@ -30,20 +31,17 @@ $custom-navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2);
 
     @media(min-width: $grid-float-breakpoint) {
       padding: $custom-navbar-padding-vertical 0;
+      height: 100px;
     }
 
     > a.btn {
       color: #fff;
-      @include font-size(10px);
-      padding: 8px 30px;
-      text-transform: uppercase;
-      vertical-align: middle;
-      letter-spacing: 1px;
+      @include font-size(11px);
+      padding: 6px 30px;
       margin: 15px;
 
       @media(min-width: $grid-float-breakpoint) {
-        margin-right: 0;
-        margin-top: -5px;
+        margin: -5px 0 0 15px;
       }
 
       &:hover {

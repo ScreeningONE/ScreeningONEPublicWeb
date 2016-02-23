@@ -1,0 +1,55 @@
+@mixin hero-bg($url) {
+  .hero {
+    background-image: url("../images/hero/" + $url);
+  }
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+
+  .wrapper {
+    padding: 50px 15px 30px;
+    background: rgba($brand-primary, 0.86);
+  }
+
+  .icon-arrow-down {
+    display: block;
+    margin: 20px auto 0;
+    background: url($icon-sprite) no-repeat -90px -44px;
+    width: 23px;
+    height: 13px;
+    cursor: pointer;
+    }
+
+  .small-title {
+    @include font-size(13.5px);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-weight: 500;
+    line-height: 100%;
+    width: 613px;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 36px;
+
+    @media(min-width: $screen-sm-min) {
+      font-size: 56px;
+    }
+  }
+
+  .desc {
+    @include font-size(15px);
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
