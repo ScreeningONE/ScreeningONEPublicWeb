@@ -1,8 +1,18 @@
+// From /images/
+$testimonial-pictures: (
+  "testimonial.png", // user-1
+  "testimonial.png", // user-2
+  "testimonial.png", // user-3
+  "testimonial.png", // user-4
+  "testimonial.png", // user-5
+);
+
 /**
  * .full-suite-testing-solutions
  * .pre-employment-screening
  * .popular-features
  * .social-feedback
+ * .testimonials
  */
 
 .page.home {
@@ -346,7 +356,6 @@
     width: 1000px;
     margin: 0 auto;
     overflow: hidden;
-    // padding: 0 15px;
   }
 
   .tweet-control {
@@ -421,6 +430,167 @@
 
         &:before {
           content: none;
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  text-align: center;
+  background: #fff;
+  padding: 60px 0;
+
+  h2.title {
+    font-weight: 300;
+    margin: 0;
+  }
+
+  hr {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-color: #bdbdbd;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .users {
+    text-align: center;
+
+    li {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin: 40px 20px;
+      cursor: pointer;
+      opacity: 0.3;
+      transition: opacity 180ms ease;
+
+      &:not(.selected):hover {
+        opacity: 0.5;
+      }
+
+      &.selected {
+        opacity: 1;
+      }
+
+      @for $i from 1 through length($testimonial-pictures) {
+        $url: nth($testimonial-pictures, $i);
+
+        &.user-#{$i} {
+          background-image: url('../images/'+$url);
+        }
+      }
+    }
+  }
+
+  .slider-wrapper {
+    width: 650px;
+    max-width: 100%;
+    margin: 35px auto 0;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider-control {
+    position: absolute;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 191px;
+    z-index: 5;
+
+    & > div {
+      position: absolute;
+      background: url($icon-sprite) no-repeat;
+      top: 80px;
+      cursor: pointer;
+      width: 12px;
+      height: 21px;
+      transition: opacity 180ms ease;
+
+      &.hide-arrow {
+        opacity: 0;
+        cursor: default;
+      }
+    }
+
+    .move-left {
+      background-position: -20px -41px;
+      left: 0;
+    }
+
+    .move-right {
+      background-position: -3px -41px;
+      right: 0;
+    }
+  }
+
+  .slider {
+    white-space: nowrap;
+
+    li {
+      display: inline-block;
+      width: 100%;
+      transition: margin 400ms ease;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 191px;
+        height: 191px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      
+      .name, .name a {
+        @include font-size(32px);
+        color: $brand-primary;
+        margin: 20px 0 0;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .job {
+        @include font-size(20px);
+        font-style: italic;
+        margin: 5px 0 10px;
+      }
+
+      .desc {
+        p {
+          @include font-size(18px);
+          color: #5d6166;
+          line-height: 160%;
+          white-space: normal;
+        }
+      }
+
+      @for $i from 1 through length($testimonial-pictures) {
+        $url: nth($testimonial-pictures, $i);
+
+        &.user-#{$i} {
+          &:before {
+            background-image: url('../images/'+$url);
+          }
         }
       }
     }

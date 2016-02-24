@@ -49,6 +49,3 @@ DEPENDENCIES
   dotenv
   jekyll
   s3_website
-
-BUNDLED WITH
-   1.10.6
