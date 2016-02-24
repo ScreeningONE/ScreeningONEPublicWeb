@@ -461,6 +461,7 @@ $testimonial-pictures: (
 
   .users {
     text-align: center;
+    margin: 40px 0;
 
     li {
       background-repeat: no-repeat;
@@ -470,7 +471,7 @@ $testimonial-pictures: (
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      margin: 40px 20px;
+      margin: 0 20px;
       cursor: pointer;
       opacity: 0.3;
       transition: opacity 180ms ease;
@@ -541,6 +542,8 @@ $testimonial-pictures: (
 
   .slider {
     white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
 
     li {
       display: inline-block;

@@ -7,7 +7,6 @@
 
 .btn {
   @include font-size(12px);
-  color: #fff;
   font-weight: 600;
   text-transform: uppercase;
   vertical-align: middle;
@@ -16,10 +15,15 @@
   max-width: 100%;
   text-align: center;
 
-  &:hover {
-    background: $brand-primary;
-    color: $btn-primary-color;
+  &.btn-primary {
+    color: #fff;
+
+    &:hover {
+      background: $brand-primary;
+      color: $btn-primary-color;
+    }
   }
+
 }
 
 p {

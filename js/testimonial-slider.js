@@ -13,7 +13,6 @@
   var $slider = $testimonials.find('ul.slider li');
 
   var $window = $(window);
-  var $sliderWidth = $testimonialWrapper.width();
   var $firstSlide = $slider.first();
 
   function updateControlArrows(selected) {
@@ -110,6 +109,10 @@
 
     setSelected([userSelected, sliderSelected]);
   })
+
+  $window.resize(function() {
+    setSelected(getSelected());
+  });
 
   setSelected(getSelected());
 
