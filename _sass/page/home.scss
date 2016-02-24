@@ -232,6 +232,7 @@ $testimonial-pictures: (
 
     .desc {
       width: 500px;
+      max-width: 100%;
       margin: 0 auto;
 
       p {
@@ -242,13 +243,24 @@ $testimonial-pictures: (
   }
 
   .lists {
+    text-align: center;
+
+    @media(min-width: $screen-sm-min) {
+      text-align: left;
+    }
+
     .featured {
       width: 78px;
       height: 78px;
       background: #000;
-      margin-bottom: 15px;
       border-radius: 50%;
       position: relative;
+
+      margin: 0 auto 15px;
+
+      @media(min-width: $screen-sm-min) {
+      margin: 0 0 15px;
+      }
 
       &:after {
         content: "";
