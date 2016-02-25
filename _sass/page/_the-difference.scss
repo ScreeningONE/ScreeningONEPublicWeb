@@ -1,0 +1,281 @@
+/**
+ * .key-differences
+ * .all-in-one-solution
+ */
+
+.page.the-difference {
+  @include hero-bg('the-difference-hero.png');
+
+  .hero {
+    .wrapper {
+      background: rgba(#372d42, 0.96);
+      max-height: 530px;
+    }
+
+    .title {
+      width: auto;
+    }
+
+    .desc {
+      width: 700px;
+    }
+
+    .icon-arrow-down {
+      background-image: url("../images/hero/the-difference-hero-popout.png");
+      background-size: contain;
+      background-position: center;
+      width: 68vw;
+      height: 37vw;
+      max-width: 100%;
+      cursor: default;
+
+      @media(min-width: $screen-lg-min) {
+        width: 769px;
+        height: 438px;
+      }
+    }
+  }
+}
+
+.key-differences {
+  margin: 30px 0;
+  text-align: center;
+  color: #364f70;
+
+  @media(min-width: $screen-md-min) {
+    margin-top: 150px;
+    text-align: left;
+  }
+
+  h2.title {
+    margin: 30px 0 15px;
+  }
+
+  .sub-title {
+    @include font-size(20px);
+    margin: 15px 0;
+  }
+
+  .desc {
+    p {
+      font-size: 15px;
+      line-height: 160%;
+    }
+  }
+
+  .btn {
+    margin: 20px 0 80px;
+    padding: 10px 0;
+    width: 330px;
+    max-width: 100%;
+  }
+
+  .checklist {
+    margin: 0 0 50px;
+    padding: 0;
+    display: inline-block;
+    list-style: none;
+
+    li {
+      text-align: left;
+      padding-left: 40px;
+      margin: 20px 0;
+      font-style: italic;
+      @include font-size(19px);
+      position: relative;
+
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:before {
+        background: $brand-primary;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+      }
+
+      &:after {
+        background:  url($icon-sprite) no-repeat 0 0;
+        width: 13px;
+        height: 12px;
+        left: 4px;
+      }
+    }
+  }
+
+  blockquote {
+    border: 0;
+    margin: 30px auto;
+    padding-left: 0;
+    width: 400px;
+    max-width: 100%;
+
+    @media(min-width: $screen-md-min) {
+      width: auto;
+    }
+
+    img {
+      display: block;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+
+      @media(min-width: $screen-md-min) {
+        float: left;
+        margin: 0 20px 20px 0;
+      }
+    }
+
+    footer {
+      padding: 0;
+      text-align: center;
+
+      @media(min-width: $screen-md-min) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.all-in-one-solution {
+  background: #f5f8fb;
+  padding: 30px 0;
+  text-align: center;
+
+  @media(min-width: $screen-md-min) {
+    padding: 70px 0 50px;
+  }
+
+  h2.title {
+    margin: 15px 0;
+  }
+
+  .desc {
+    width: 430px;
+    max-width: 100%;
+    @include font-size(16px);
+    margin: 0 auto;
+  }
+
+  .steps {
+    padding: 0;
+    margin: 30px 0 50px;
+    list-style: none;
+
+    @media(min-width: $screen-md-min) {
+      margin: 100px 0;
+    }
+
+    li {
+      @media(min-width: $screen-md-min) {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    .step-1-link, .step-2,
+    .step-2-link, .step-3,
+    .step-3:before, .step-3:after {
+      background: url('../images/all-in-one-solution-sprite.png') no-repeat;
+    }
+
+    .step-1, .step-3, .step-3:before, .step-3:after {
+      width: 79px;
+      height: 79px;
+    }
+
+    .step-1 {
+      background-image: url('../images/testimonial.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+
+    .step-1-link {
+      background-position: -47px -107px;
+      width: 5px;
+      height: 37px;
+      margin: 15px auto;
+
+      @media(min-width: $screen-md-min) {
+        background-position: -134px -139px;
+        width: 37px;
+        height: 6px;
+        margin: 0 15px;
+      }
+    }
+
+    .step-2 {
+      background-position: 0 0;
+      width: 73px;
+      height: 99px;
+      margin: 0 auto;
+    }
+
+    .step-2-link {
+      background-position: -7px -155px;
+      width: 87px;
+      height: 39px;
+      margin: 15px auto;
+
+      @media(min-width: $screen-md-min) {
+        background-position: -196px -99px;
+        width: 39px;
+        height: 86px;
+        margin: 0 15px;
+      }
+    }
+
+    .step-3 {
+      background-position: -297px 0;
+      margin: 0 auto;
+      top: 20px;
+      position: relative;
+
+      @media(min-width: $screen-md-min) {
+        top: 0;
+        margin: 0;
+        left: 20px;
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        background-position: -196px 0;
+        position: absolute;
+        left: -80px;
+        top: -30px;
+
+        @media(min-width: $screen-md-min) {
+          left: -30px;
+          top: -80px;
+        }
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        background-position: -95px 0;
+        position: absolute;
+        right: -80px;
+        top: -30px;
+
+        @media(min-width: $screen-md-min) {
+          left: -30px;
+          top: initial;
+          bottom: -80px;
+        }
+      }
+    }
+  }
+}

@@ -17,7 +17,6 @@ $testimonial-pictures: (
 
 .page.home {
   @include hero-bg('home-hero.png');
-  overflow-x: hidden;
 }
 
 .full-suite-testing-solutions {
