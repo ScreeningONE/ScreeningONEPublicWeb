@@ -44,9 +44,12 @@ $footer-color: #404950;
   "partials/accreditations",
   "partials/color-strip",
   "partials/request-callback",
-  "partials/ready-contact-cta"
+  "partials/get-started-cta",
+  "partials/screenshot-feature",
+  "partials/get-started-cta-square"
 ;
 
 @import
-  "page/home"
+  "page/home",
+  "page/how-it-works"
 ;

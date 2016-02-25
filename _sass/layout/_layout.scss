@@ -37,3 +37,15 @@ p {
     }
   }
 }
+
+.small-title {
+  @include font-size(14px);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2.title {
+  margin: 0;
+  font-weight: 300;
+}

@@ -35,8 +35,6 @@ $testimonial-pictures: (
   .header {
     h2.title {
       @include font-size(26px);
-      font-weight: 300;
-      margin: 0;
 
       @media(min-width: $screen-sm-min) {
         @include font-size(32px);
@@ -139,19 +137,10 @@ $testimonial-pictures: (
 
 .pre-employment-screening {
   background: #f5f8fb;
-  padding: 30px 0;
   color: #364f70;
-  min-height: 520px;
-  text-align: center;
 
   @media(min-width: $screen-md-min) {
     margin: 30px 0;
-    padding: 70px 0;
-    text-align: left;
-  }
-
-  .container {
-    position: relative;
   }
 
   .fingerprint {
@@ -165,53 +154,14 @@ $testimonial-pictures: (
     }
   }
 
-  .small-title {
-    @include font-size(14px);
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 20px 0 10px;
-  }
-
-  h2.title {
-    margin: 0 0 20px;
-    font-weight: 300;
-    font-size: 32px;
-  }
-
-  .desc {
-    width: 480px;
-    max-width: 100%;
-    margin: 0 auto;
-
-    @media(min-width: $screen-md-min) {
-      margin: 0;
-    }
-
-    p {
-      font-size: 15px;
-      line-height: 160%;
-    }
-  }
-
-  .employment-chart {
-    background: url('../images/screenshot/employment-chart.png') no-repeat;
-    max-width: 100%;
-    background-size: contain;
-    background-position: center;
+  .screenshot {
+    background-image: url('../images/screenshot/employment-chart.png');
     width: 72.3vw;
     height: 54vw;
-    margin: 30px auto 0;
-    -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
-    -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
-    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.14);
 
     @media(min-width: $screen-md-min) {
       width: 775px;
       height: 580px;
-      margin: 0;
-      max-width: initial;
-      position: absolute;
       top: -100px;
     }
   }
@@ -225,7 +175,6 @@ $testimonial-pictures: (
     margin-bottom: 30px;
 
     h2.title {
-      font-weight: 300;
       margin: 0 0 15px;
       text-align: center;
     }
@@ -342,16 +291,7 @@ $testimonial-pictures: (
   color: #364f70;
 
   .small-title {
-    @include font-size(14px);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
     margin-bottom: 20px;
-  }
-
-  h2.title {
-    margin: 0;
-    font-weight: 300;
   }
 
   .desc {
@@ -452,11 +392,6 @@ $testimonial-pictures: (
   text-align: center;
   background: #fff;
   padding: 60px 0;
-
-  h2.title {
-    font-weight: 300;
-    margin: 0;
-  }
 
   hr {
     width: 600px;

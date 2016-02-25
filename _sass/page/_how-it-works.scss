@@ -1,0 +1,122 @@
+.page.how-it-works {
+  overflow-x: hidden;
+
+  .hero {
+    background-color: transparent;
+    position: relative;
+
+    .icon-arrow-down {
+      background-image: url("../images/hero/how-it-works-hero.png");
+      background-size: contain;
+      background-position: center;
+      width: 88vw;
+      height: 43vw;
+      max-width: 100%;
+      cursor: default;
+
+      @media(min-width: $screen-lg-min) {
+        width: 1201px;
+        height: 527px;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 11vw;
+        left: 0;
+        background: #30273a;
+        z-index: -1;
+        
+        @media(min-width: $screen-lg-min) {
+          bottom: 120px;
+        }
+      }
+    }
+
+    .title {
+      width: auto;
+    }
+
+    .desc {
+      width: 700px;
+    }
+  }
+}
+
+.screenshot-criminal-searches {
+  background: #fff;
+
+  @media(min-width: $screen-md-min) {
+    padding: 150px 0 80px;
+    margin: 50px 0 0;
+  }
+
+  .screenshot {
+    background-image: url('../images/screenshot/criminal-searches.png');
+    width: 72.3vw;
+    height: 49.5vw;
+
+    @media(min-width: $screen-md-min) {
+      width: 775px;
+      height: 531px;
+      top: -160px;
+    }
+  }
+}
+
+.screenshot-verifications-interviews {
+  background-color: #f5f8fb;
+  background-image: url('../images/purple-wave.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  padding: 30px 0 50px;
+  min-height: 630px;
+  position: relative;
+  z-index: 5;
+
+  @media(min-width: $screen-md-min) {
+    padding: 150px 0 80px;
+    margin: 0;
+  }
+
+  .screenshot {
+    background-image: url('../images/verification-interviews.png');
+    box-shadow: 0 0 0;
+    width: 80.3vw;
+    height: 59.5vw;
+
+    @media(min-width: $screen-md-min) {
+      width: 681px;
+      height: 504px;;
+      top: -100px;
+      right: 0;
+    }
+  }
+}
+
+.screenshot-drug-testing {
+  background: #fff;
+  min-height: 620px;
+  overflow: hidden;
+
+  @media(min-width: $screen-md-min) {
+    padding: 150px 0 80px;
+    margin: 0;
+  }
+
+  .screenshot {
+    background-image: url('../images/screenshot/drug-testing.png');
+    box-shadow: 0 0 0;
+    width: 77.3vw;
+    height: 66.5vw;
+
+    @media(min-width: $screen-md-min) {
+      width: 724px;
+      height: 622px;
+      top: -140px;
+    }
+  }
+}

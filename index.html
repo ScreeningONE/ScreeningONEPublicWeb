@@ -2,12 +2,11 @@
 layout: default
 pageClass: home
 hero:
-  class: hero-home
   small-title: The very best in
-  title: Smart Solutions for Employment Screening
+  title: Smart Solutions for<br>Employment Screening
   description: >
     Lorem ipsum dolor sit amet, elit consectetur adipisicing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    do<br>eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 ---
 
 {% include partials/hero.html %}
@@ -68,30 +67,24 @@ hero:
   </div>
 </div>
 
-<div class="pre-employment-screening">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-24 col-md-12">
-        <div class="fingerprint"></div>
-        <div class="small-title">Saves time, money and resources</div>
-        <h2 class="title">Pre-employment Screening</h2>
-        <div class="desc">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-            do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Lorem ipsum consectetur dolor sit amet, consectetur.
-          </p>
-          <p>
-            <a href="#">Get your free consultation now.</a>
-          </p>
-        </div>
-      </div>
-      <div class="col-xs-24 col-md-12">
-        <div class="employment-chart"></div>
-      </div>
-    </div>
+{% capture screenshot-feature-content %}
+  <div class="fingerprint"></div>
+  <div class="small-title">Saves time, money and resources</div>
+  <h2 class="title">Pre-employment Screening</h2>
+  <div class="desc">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum consectetur dolor sit amet, consectetur.
+    </p>
+    <p>
+      <a href="#">Get your free consultation now.</a>
+    </p>
   </div>
-</div>
+{% endcapture %}
+{% assign screenshot-feauture-class = 'pre-employment-screening' %}
+
+{% include partials/screenshot-feature.html %}
 
 <div class="popular-features">
   <div class="container">
@@ -258,4 +251,4 @@ hero:
   </div>
 </div>
 
-{% include partials/ready-contact-cta.html %}
+{% include partials/get-started-cta.html %}

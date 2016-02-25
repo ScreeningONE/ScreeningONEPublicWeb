@@ -1,6 +1,9 @@
 @mixin hero-bg($url) {
   .hero {
     background-image: url("../images/hero/" + $url);
+    .wrapper {
+      background: rgba($brand-primary, 0.86);
+    }
   }
 }
 
@@ -12,7 +15,6 @@
 
   .wrapper {
     padding: 50px 15px 30px;
-    background: rgba($brand-primary, 0.86);
   }
 
   .icon-arrow-down {
@@ -25,10 +27,6 @@
     }
 
   .small-title {
-    @include font-size(13.5px);
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
     margin-bottom: 10px;
   }
 
@@ -46,7 +44,7 @@
   }
 
   .desc {
-    @include font-size(15px);
+    @include font-size(16px);
     width: 500px;
     max-width: 100%;
     margin: 0 auto;

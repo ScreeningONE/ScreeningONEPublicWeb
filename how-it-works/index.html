@@ -1,0 +1,69 @@
+---
+layout: default
+pageClass: how-it-works
+hero:
+  small-title: The very best in
+  title: Pre-employment &amp; drug testing solutions
+  description: >
+    Lorem ipsum dolor sit amet, elit consectetur adipisicing elit, sed
+    do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+---
+{% include partials/hero.html %}
+
+{% capture screenshot-feature-content %}
+  <div class="small-title">Benefit Here</div>
+  <h2 class="title">Criminal Searches</h2>
+  <div class="sub-title">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+  </div>
+  <div class="desc">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum consectetur dolor sit amet, consectetur.
+    </p>
+  </div>
+{% endcapture %}
+{% assign screenshot-feauture-class = 'screenshot-criminal-searches' %}
+
+{% include partials/screenshot-feature.html %}
+
+{% capture screenshot-feature-content %}
+  <div class="small-title">Benefit Here</div>
+  <h2 class="title">Verifications &amp; Interviews</h2>
+  <div class="sub-title">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+  </div>
+  <div class="desc">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum consectetur dolor sit amet, consectetur.
+    </p>
+  </div>
+{% endcapture %}
+{% assign screenshot-feauture-class = 'screenshot-verifications-interviews' %}
+{% assign screenshot-feature-swap = true %}
+
+{% include partials/screenshot-feature.html %}
+
+{% capture screenshot-feature-content %}
+  <div class="small-title">Benefit Here</div>
+  <h2 class="title">Drug Testing</h2>
+  <div class="sub-title">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.
+  </div>
+  <div class="desc">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Lorem ipsum consectetur dolor sit amet, consectetur.
+    </p>
+  </div>
+{% endcapture %}
+{% assign screenshot-feauture-class = 'screenshot-drug-testing' %}
+{% assign screenshot-feature-swap = false %}
+
+{% include partials/screenshot-feature.html %}
+
+{% include partials/get-started-cta-square.html %}
