@@ -3,7 +3,11 @@
 
 $font-family-sans-serif: 'Source Sans Pro', sans-serif;
 $font-family-base: $font-family-sans-serif;
+
 $brand-primary: #8f4db6;
+$secondary-color: #364f70;
+$secondary-darker: #2b333f;
+
 $grid-float-breakpoint: 1080px;
 $icon-sprite: "../images/icons.png";
 $grid-columns: 24;
@@ -53,5 +57,6 @@ $footer-color: #404950;
 @import
   "page/home",
   "page/how-it-works",
-  "page/the-difference"
+  "page/the-difference",
+  "page/pre-employment-screening"
 ;

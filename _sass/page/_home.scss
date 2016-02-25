@@ -9,7 +9,7 @@ $testimonial-pictures: (
 
 /**
  * .full-suite-testing-solutions
- * .pre-employment-screening
+ * .screenshot-pre-employment-screening
  * .popular-features
  * .social-feedback
  * .testimonials
@@ -17,6 +17,16 @@ $testimonial-pictures: (
 
 .page.home {
   @include hero-bg('home-hero.png');
+
+  .hero {
+    .title {
+      font-weight: 500;
+      width: 613px;
+    }
+    .desc {
+      width: 500px;
+    }
+  }
 }
 
 .full-suite-testing-solutions {
@@ -134,9 +144,9 @@ $testimonial-pictures: (
   }
 }
 
-.pre-employment-screening {
+.screenshot-pre-employment-screening {
   background: #f5f8fb;
-  color: #364f70;
+  color: $secondary-color;
 
   @media(min-width: $screen-md-min) {
     margin: 30px 0;
@@ -267,7 +277,7 @@ $testimonial-pictures: (
       @include font-size(13px);
       text-transform: uppercase;
       font-weight: bold;
-      color: #364f70;
+      color: $secondary-color;
       letter-spacing: 1px;
       margin-bottom: 10px;
     }
@@ -287,7 +297,7 @@ $testimonial-pictures: (
   background: #f5f8fb;
   text-align: center;
   padding: 70px 0;
-  color: #364f70;
+  color: $secondary-color;
 
   .small-title {
     margin-bottom: 20px;
