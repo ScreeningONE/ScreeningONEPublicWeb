@@ -9,7 +9,7 @@ GEM
     dotenv (1.0.2)
     ffi (1.9.10)
     ffi (1.9.10-x86-mingw32)
-    jekyll (3.1.1)
+    jekyll (3.1.2)
       colorator (~> 0.1)
       jekyll-sass-converter (~> 1.0)
       jekyll-watch (~> 1.1)
@@ -32,7 +32,7 @@ GEM
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rouge (1.10.1)
-    s3_website (2.10.0)
+    s3_website (2.11.0)
       colored (= 1.2)
       configure-s3-website (= 1.7.1)
       dotenv (~> 1.0)
@@ -48,4 +48,4 @@ PLATFORMS
 DEPENDENCIES
   dotenv
   jekyll
-  s3_website
+  s3_website (= 2.11.0)
