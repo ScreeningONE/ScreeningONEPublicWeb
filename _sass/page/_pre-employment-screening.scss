@@ -1,3 +1,9 @@
+/**
+ * .pre-employment-screening-features
+ * .pre-employment-screening-benefits
+ * .rio-calculator-cta
+ */
+
 .page.pre-employment-screening {
   @include hero-bg('wave-hero.png');
 
@@ -88,6 +94,190 @@
 
     &:before {
       background-image: url('../images/screening-small-2.png');
+    }
+  }
+}
+
+.pre-employment-screening-benefits {
+  text-align: center;
+  color: $secondary-color;
+  background: #f5f8fb;
+  padding: 50px 0 20px;
+
+  h2.title {
+    margin: 20px 0 50px;
+  }
+
+  ul {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+
+    li {
+      @include font-size(19px);
+      position: relative;
+      padding-left: 50px;
+      margin-bottom: 40px;
+
+      &:before, &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+      }
+
+      &:before {
+        background: $brand-primary;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        border: 5px solid #DDDDDE;
+        left: 0;
+      }
+
+      &:after {
+        background: url($icon-sprite) no-repeat 0 0;
+        width: 13px;
+        height: 12px;
+        left: 8px;
+      }
+    }
+  }
+}
+
+.rio-calculator-cta {
+  text-align: center;
+  padding: 30px 0 0;
+
+  @media(min-width: $screen-md-min) {
+    padding: 50px 0 0;
+  }
+
+  h2.title {
+    margin: 20px 0;
+  }
+
+  .desc {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+
+    @media(min-width: $screen-md-min) {
+      margin-bottom: 50px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 170%;
+    }
+  }
+
+  .img-responsive {
+    margin: 0 auto 20px;
+
+    @media(min-width: $screen-md-min) {
+      margin: 0 0 25px auto;
+    }
+  }
+
+  .number-of-employees {
+    width: 477px;
+    max-width: 100%;
+    margin: 0 auto 25px;
+    padding: 30px 20px;
+    text-align: left;
+    border: 1px solid #DDDDDE;
+    border-radius: 2px;
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      padding: 23px 20px;
+    }
+
+    &:before {
+      content: "$";
+      font-weight: 300;
+      display: inline-block;
+      color: #fff;
+      font-size: 35px;
+      line-height: 100%;
+      background: $brand-primary;
+      border-radius: 50%;
+      width: 60px;
+      padding: 12px 0;
+      height: 60px;
+      text-align: center;
+      vertical-align: middle;
+
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        font-size: 25px;
+        width: 46px;
+        padding: 9px 0;
+        height: 46px;
+      }
+    }
+
+    .desc {
+      display: inline-block;
+      max-width: calc(100% - 70px);
+      padding: 0 0 0 15px;
+      margin: 0;
+      vertical-align: middle;
+
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        max-width: calc(100% - 55px);
+        padding: 0 0 0 5px;
+      }
+
+      p {
+        font-size: 16px;
+        margin: 0;
+
+        @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+          font-size: 1.28vw;
+        }
+      }
+    }
+  }
+
+  form {
+    margin: 25px 0 0;
+    color: $secondary-color;
+
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      margin: 15px 0 0;
+    }
+
+    label.small-title {
+      font-size: 14px;
+      display: block;
+      padding: 0 0 10px;
+
+      @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        font-size: 12px;
+        white-space: nowrap;
+      }
+    }
+
+    input {
+      width: calc(100% - 2px);
+      border: 1px solid #DDDDDE;
+      padding: 15px 20px;
+      font-size: 16px;
+      line-height: 100%;
+      display: block;
+      border-radius: 3px;
+      margin: 0 0 15px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      padding: 12px 0;
     }
   }
 }
