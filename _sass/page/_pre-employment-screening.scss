@@ -5,19 +5,15 @@
  */
 
 .page.pre-employment-screening {
-  @include hero-bg('wave-hero.png');
+  @include wave-hero();
 
-  .hero {
-    .wrapper {
-      background: rgba(#372d42, 0.86);
-
-      @media(min-width: $screen-md-min) {
+  @media(min-width: $screen-md-min) {
+    .hero {
+      .wrapper {
         padding-bottom: 100px;
       }
-    }
 
-    .icon-arrow-down {
-      @media(min-width: $screen-md-min) {
+      .icon-arrow-down {
         display: none;
       }
     }
@@ -39,11 +35,11 @@
 
   .desc {
     color: #2b333f;
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
 
     @media(min-width: $screen-md-min) {
-      max-width: 300px;
+      max-width: 250px;
     }
   }
 

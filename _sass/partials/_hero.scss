@@ -7,6 +7,16 @@
   }
 }
 
+@mixin wave-hero() {
+  @include hero-bg('wave-hero.png');
+
+  .hero {
+    .wrapper {
+      background: rgba(#372d42, 0.86);
+    }
+  }
+}
+
 .hero {
   background-repeat: no-repeat;
   background-size: cover;
