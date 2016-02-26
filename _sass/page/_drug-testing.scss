@@ -1,3 +1,205 @@
+/**
+ * .drug-test-benefits
+ * .drug-test-results
+ */
+
 .page.drug-testing {
   @include wave-hero();
+
+  .hero {
+    .desc {
+      width: 600px;
+    }
+
+    .large-bit {
+      @include font-size(22px);
+      margin: 20px 0;
+
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.drug-test-benefits {
+  padding: 50px 0;
+
+  .header {
+    text-align: center;
+
+    h2.title {
+      margin-bottom: 20px;
+    }
+
+    .desc {
+      width: 650px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      p {
+        font-size: 18px;
+        line-height: 170%;
+      }
+    }
+
+    hr {
+      width: 600px;
+      max-width: 100%;
+      margin: 50px auto;
+      border-color: #ddddde;
+    }
+  }
+
+  .benefits {
+    background: url('../images/benefits.png') no-repeat center;
+    background-size: contain;
+    width: 541px;
+    max-width: 100%;
+    height: 89vw;
+    max-height: 541px;
+    margin: 0 auto;
+  }
+
+  .content {
+    text-align: center;
+
+    @media(min-width: $screen-md-min) {
+      text-align: left;
+    }
+
+    h2.title {
+      padding: 30px 0 20px;
+
+      @media(min-width: $screen-md-min) {
+        padding: 100px 0 20px;
+      }
+    }
+
+    .desc {
+      width: 400px;
+      max-width: 100%;
+      margin: 0 auto;
+
+      @media(min-width: $screen-md-min) {
+        margin: 0;
+      }
+
+      p {
+        font-size: 17px;
+        line-height: 180%;
+      }
+    }
+
+    .download {
+      list-style: none;
+      display: inline-block;
+      text-align: left;
+      padding: 0;
+      margin: 15px 0;
+
+      a {
+        padding: 25px 0 25px 80px;
+        margin-bottom: 15px;
+        display: block;
+        font-size: 17px;
+        color: $secondary-color;
+        position: relative;
+
+        &:before, &:after {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          bottom: 0;
+        }
+
+        &:before {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          left: 0;
+          background: #DFDFDF;
+        }
+
+        &:hover:before {
+          background: darken(#dfdfdf, 2);
+        }
+
+        &:after {
+          background: url($icon-sprite) no-repeat -43px -40px;
+          width: 37px;
+          height: 33px;
+          bottom: 6px;
+          left: 13px;
+        }
+      }
+    }
+  }
+}
+
+.drug-test-results {
+  padding: 70px 0 30px;
+  background: #f5f8fb;
+  text-align: center;
+
+  @media(min-width: $screen-md-min) {
+    text-align: left;
+  }
+
+  img.img-responsive {
+    margin: 0 auto;
+  }
+
+  h2.title {
+    margin: 25px 0 0;
+
+    @media(min-width: $screen-md-min) {
+      margin: 0;
+    }
+  }
+
+  .desc, blockquote {
+    width: 500px;
+    max-width: 100%;
+    margin: 20px auto;
+
+    @media(min-width: $screen-md-min) {
+      width: auto;
+    }
+  }
+
+  .desc {
+    p {
+      @include font-size(17px);
+      line-height: 170%;
+    }
+  }
+
+  blockquote {
+    border: 0;
+    padding: 0;
+    font-size: 21px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 170%;
+    color: $secondary-color;
+  }
+
+  .footer {
+    text-align: center;
+
+    .btn {
+      display: block;
+      padding: 10px 0;
+      width: 300px;
+      max-width: 100%;
+      margin: 10px auto 30px;
+
+      @media(min-width: $screen-md-min) {
+        margin: 50px auto 30px;
+      }
+    }
+  }
 }
