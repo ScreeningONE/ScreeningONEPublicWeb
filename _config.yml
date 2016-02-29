@@ -1,3 +1,5 @@
+baseurl: /screeningone
+
 markdown: kramdown
 highlighter: null
 exclude:
@@ -8,4 +10,12 @@ exclude:
   - .env
   - .*.env
   - s3_website.yml
-host: 0.0.0.0
+
+assets:
+  baseurl: /screeningone/assets/
+  dirname: assets
+  sources:
+    - _assets
+  debug: false
+  js_compressor: uglifier
+  css_compressor: sass

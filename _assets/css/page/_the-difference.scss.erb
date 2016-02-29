@@ -4,7 +4,7 @@
  */
 
 .page.the-difference {
-  @include hero-bg('the-difference-hero.png');
+  @include hero-bg("<%= asset_path 'img/hero/the-difference-hero.png' %>");
 
   .hero {
     .wrapper {
@@ -21,7 +21,7 @@
     }
 
     .icon-arrow-down {
-      background-image: url("../images/hero/the-difference-hero-popout.png");
+      background-image: url(<%= asset_path 'img/hero/the-difference-hero-popout.png' %>);
       background-size: contain;
       background-position: center;
       width: 68vw;
@@ -184,7 +184,7 @@
     .step-1-link, .step-2,
     .step-2-link, .step-3,
     .step-3:before, .step-3:after {
-      background: url('../images/all-in-one-solution-sprite.png') no-repeat;
+      background: url(<%= asset_path 'img/all-in-one-solution-sprite.png' %>) no-repeat;
     }
 
     .step-1, .step-3, .step-3:before, .step-3:after {
@@ -193,7 +193,7 @@
     }
 
     .step-1 {
-      background-image: url('../images/testimonial.png');
+      background-image: url(<%= asset_path 'img/testimonial.png' %>);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;

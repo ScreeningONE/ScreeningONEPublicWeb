@@ -1,6 +1,6 @@
 @mixin hero-bg($url) {
   .hero {
-    background-image: url("../images/hero/" + $url);
+    background-image: url($url);
     .wrapper {
       background: rgba($brand-primary, 0.86);
     }
@@ -8,7 +8,7 @@
 }
 
 @mixin wave-hero() {
-  @include hero-bg('wave-hero.png');
+  @include hero-bg("<%= asset_path 'img/hero/wave-hero.png' %>");
 
   .hero {
     .wrapper {

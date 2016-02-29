@@ -58,7 +58,7 @@
 
   .feature-1 {
     &:before {
-      background-image: url('../images/screening-small-1.png');
+      background-image: url(<%= asset_path 'img/screening-small-1.png' %>);
     }
   }
 
@@ -69,7 +69,7 @@
     }
 
     &:before {
-      background-image: url('../images/screening-big.png');
+      background-image: url(<%= asset_path 'img/screening-big.png' %>);
       background-size: contain;
       width: 446px;
       max-width: 100%;
@@ -89,7 +89,7 @@
   .feature-3 {
 
     &:before {
-      background-image: url('../images/screening-small-2.png');
+      background-image: url(<%= asset_path 'img/screening-small-2.png' %>);
     }
   }
 }

@@ -1,11 +1,13 @@
 // From /images/
-$testimonial-pictures: (
-  "testimonial.png", // user-1
-  "testimonial.png", // user-2
-  "testimonial.png", // user-3
-  "testimonial.png", // user-4
-  "testimonial.png", // user-5
-);
+<%
+  testimonial_pictures = [
+    "testimonial.png",
+    "testimonial.png",
+    "testimonial.png",
+    "testimonial.png",
+    "testimonial.png",
+  ];
+%>
 
 /**
  * .full-suite-testing-solutions
@@ -16,7 +18,7 @@ $testimonial-pictures: (
  */
 
 .page.home {
-  @include hero-bg('home-hero.png');
+  @include hero-bg("<%= asset_path 'img/hero/home-hero.png' %>");
 
   .hero {
     .title {
@@ -105,15 +107,15 @@ $testimonial-pictures: (
       }
 
       &.featured-1 {
-        background-image: url('../images/featured-1.png')
+        background-image: url(<%= asset_path 'img/featured-1.png' %>)
       }
 
       &.featured-2 {
-        background-image: url('../images/featured-2.png')
+        background-image: url(<%= asset_path 'img/featured-2.png' %>)
       }
 
       &.featured-3 {
-        background-image: url('../images/featured-3.png')
+        background-image: url(<%= asset_path 'img/featured-3.png' %>)
       }
     }
 
@@ -153,7 +155,7 @@ $testimonial-pictures: (
   }
 
   .fingerprint {
-    background: url('../images/finger-print.png') no-repeat;
+    background: url(<%= asset_path 'img/finger-print.png' %>) no-repeat;
     width: 123px;
     height: 123px;
     margin: 0 auto;
@@ -164,7 +166,7 @@ $testimonial-pictures: (
   }
 
   .screenshot {
-    background-image: url('../images/screenshot/employment-chart.png');
+    background-image: url(<%= asset_path 'img/screenshot/employment-chart.png' %>);
     width: 72.3vw;
     height: 54vw;
 
@@ -222,7 +224,7 @@ $testimonial-pictures: (
 
       &:after {
         content: "";
-        background: url('../images/popular-feature-icons.png') no-repeat;
+        background: url(<%= asset_path 'img/popular-feature-icons.png' %>) no-repeat;
         display: block;
         margin: auto;
         position: absolute;
@@ -440,13 +442,11 @@ $testimonial-pictures: (
         opacity: 1;
       }
 
-      @for $i from 1 through length($testimonial-pictures) {
-        $url: nth($testimonial-pictures, $i);
-
-        &.user-#{$i} {
-          background-image: url('../images/'+$url);
+      <% testimonial_pictures.each_with_index do |url, index| %>
+        &:nth-child(<%= index + 1 %>) {
+          background-image: url(<%= asset_path 'img/'+url %>);
         }
-      }
+      <% end %>
     }
   }
 
@@ -543,15 +543,13 @@ $testimonial-pictures: (
         }
       }
 
-      @for $i from 1 through length($testimonial-pictures) {
-        $url: nth($testimonial-pictures, $i);
-
-        &.user-#{$i} {
+      <% testimonial_pictures.each_with_index do |url, index| %>
+        &:nth-child(<%= index + 1 %>) {
           &:before {
-            background-image: url('../images/'+$url);
+            background-image: url(<%= asset_path 'img/'+url %>);
           }
         }
-      }
+      <% end %>
     }
   }
 }
