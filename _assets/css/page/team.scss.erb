@@ -1,0 +1,121 @@
+.page.team {
+  @include page-hero();
+}
+
+.team-content {
+  padding: 70px 0;
+
+  h2.title {
+    margin-bottom: 30px;
+  }
+
+  .team-1, .team-2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 100%;
+    height: 31.5vw;
+    max-height: 292px;
+    margin: 0 auto;
+  }
+
+  .team-1 {
+    background-image: url(<%= asset_path 'img/team-1.png' %>);
+    width: 292px;
+  }
+
+  .team-2 {
+    background-image: url(<%= asset_path 'img/team-2.png' %>);
+    width: 438px;
+  }
+
+  .twitter-tweet {
+    border: 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    background: #0084b4;
+    padding: 15px;
+    margin: 30px 22px;
+    max-width: 100%;
+
+    @media(min-width: $screen-sm-min) {
+      margin: 30px;
+    }
+
+    @media(min-width: $screen-md-min) {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      height: 292px;
+      padding: 30px;
+      margin: 0;
+    }
+
+    p {
+      font-size: 22px;
+      font-weight: 300;
+      line-height: 24px;
+
+      a {
+        font-weight: normal;
+      }
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      outline: 0 none;
+
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .name, .dateline {
+      display: block;
+      width: 100%;
+    }
+
+    .name {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .dateline {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  .counter {
+    text-align: center;
+    color: $secondary-color;
+    margin-top: 50px;
+
+    & > div:not(.clearfix) {
+      margin-bottom: 30px;
+
+      @media(min-width: $screen-md-min) {
+        margin-bottom: 0;
+      }
+    }
+
+
+    .number {
+      font-size: 50px;
+    }
+
+    .type {
+      font-size: 17px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+}
