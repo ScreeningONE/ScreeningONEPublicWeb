@@ -1,0 +1,33 @@
+---
+layout: default
+title: FAQs
+pageClass: faqs
+hero:
+  small-title: Support
+  title: FAQs
+  description: >
+    Lorem ipsum dolor sit amet, elit consectetur adipisicing elit, sed
+    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+---
+{% include partials/hero.html %}
+{% include partials/call-us-strip.html %}
+
+<div class="faq-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-24 col-sm-12 col-md-10">
+        <ul class="categories-questions">
+          {% include faq/getting-started.html %}
+          {% include faq/understanding-billing-system.html %}
+        </ul>
+      </div>
+      <div class="col-xs-24 col-sm-12 col-md-14">
+        <div class="answers">
+          <div class="question"></div>
+          <div class="title">Answer</div>
+          <div class="answer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

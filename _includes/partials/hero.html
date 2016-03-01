@@ -2,6 +2,13 @@
   <div class="wrapper">
     <div class="small-title">{{ page.hero.small-title }}</div>
     <h1 class="title">{{ page.hero.title }}</h1>
+    {% if page.hero.list %}
+      <ul class="list">
+        {% for list in page.hero.list %}
+          <li>{{ list }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
     <div class="desc"><p>{{ page.hero.description }}</p></div>
     <div class="icon-arrow-down"></div>
   </div>

@@ -1,0 +1,134 @@
+/**
+ * .faq-container
+ */
+
+.page.faqs {
+  @include page-hero();
+}
+
+.faq-container {
+  padding: 70px 0;
+
+  .categories-questions {
+    border: 1px solid #c9c9ca;
+    padding: 30px;
+    margin: 0;
+    font-weight: bold;
+    list-style: none;
+
+    & > li {
+      position: relative;
+      color: $secondary-color;
+      margin: 0 0 20px 35px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &.open {
+        &:before {
+          content: "-";
+          padding: 6px 0 10px;
+        }
+      }
+
+      &:before {
+        content: "+";
+        position: absolute;
+        font-weight: 800;
+        font-size: 19px;
+        line-height: 0;
+        left: -35px;
+        top: -1px;
+        width: 20px;
+        border: 2px solid $secondary-color;
+        border-radius: 6px;
+        padding: 7px 0 9px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+
+    .title, .question {
+      cursor: pointer;
+
+      &:hover {
+        color: darken($brand-primary, 30);
+      }
+    }
+
+    .title {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 0 0 10px;
+    }
+
+    .questions {
+      display: none;
+      padding: 0;
+      margin: 0;
+
+      & > li {
+        &.selected {
+          .question {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+
+    .question {
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 0;
+    }
+  }
+
+  .answers {
+    border: 1px solid #c9c9ca;
+    padding: 30px;
+    margin: 0;
+
+    .question, .answer {
+      display: none;
+    }
+
+    .question {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $secondary-color;
+      font-weight: bold;
+    }
+
+    .title {
+      padding: 20px 0;
+      font-weight: 300;
+      font-size: 32px;
+    }
+
+    .answer {
+      font-size: 15px;
+      line-height: 160%;
+
+      p {
+        color: $secondary-color
+      }
+
+      ul {
+        margin: 10px 0 30px;
+        padding-left: 20px;
+
+        li {
+          color: $brand-primary;
+
+          p {
+            color: $secondary-color
+          }
+        }
+      }
+    }
+  }
+}

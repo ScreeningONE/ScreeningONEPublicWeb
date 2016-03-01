@@ -1,20 +1,18 @@
-@mixin hero-bg($url) {
+@mixin hero-bg($url, $bg-color: $brand-primary) {
   .hero {
     background-image: url($url);
     .wrapper {
-      background: rgba($brand-primary, 0.86);
+      background: rgba($bg-color, 0.86);
     }
   }
 }
 
 @mixin wave-hero() {
-  @include hero-bg("<%= asset_path 'img/hero/wave-hero.png' %>");
+  @include hero-bg("<%= asset_path 'img/hero/wave-hero.png' %>", #432c51);
+}
 
-  .hero {
-    .wrapper {
-      background: rgba(#372d42, 0.86);
-    }
-  }
+@mixin page-hero() {
+  @include hero-bg("<%= asset_path 'img/hero/page-hero.png' %>", #2f2639);
 }
 
 .hero {
@@ -50,6 +48,36 @@
 
     @media(min-width: $screen-sm-min) {
       font-size: 56px;
+    }
+  }
+
+  .list {
+    text-align: left;
+    overflow: hidden;
+    margin: 30px auto;
+    padding: 0;
+    list-style: none;
+    width: 800px;
+    max-width: 100%;
+
+    li {
+      @include font-size(18px);
+      margin: 20px;
+      float: left;
+
+      &:nth-child(even) {
+        float: right;
+      }
+
+      &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: -7px;
+        margin-right: 20px;
+        background: url($icon-sprite) no-repeat -74px -4px;
+        width: 27px;
+        height: 27px;
+      }
     }
   }
 
