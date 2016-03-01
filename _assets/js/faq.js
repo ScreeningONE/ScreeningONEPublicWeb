@@ -57,7 +57,7 @@
     var answerText = $answers.find('.answer');
     var selectedAnswer = selected.find('.answer');
 
-    answerQuestion.hide().text(selectedQuestion.text()).fadeIn();
+    answerQuestion.text(selectedQuestion.text()).fadeIn();
     answerText.hide().html(selectedAnswer.html()).slideDown();
   }
 
