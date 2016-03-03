@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="page simple-page">
+    {% include header.html %}
+
+    {% include partials/hero.html %}
+
+    <div class="container simple-page-content">
+      <div class="row">
+        <div class="col-xs-24 col-sm-20 col-sm-offset-1">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    {% include partials/get-started-cta.html %}
+
+    {% include footer.html %}
+  </body>
+</html>
