@@ -1,18 +1,18 @@
-@mixin hero-bg($url, $bg-color: $brand-primary) {
+@mixin hero-bg($url, $bg-color: rgba($brand-primary, 0.86)) {
   .hero {
     background-image: url($url);
     .wrapper {
-      background: rgba($bg-color, 0.86);
+      background: $bg-color;
     }
   }
 }
 
 @mixin wave-hero() {
-  @include hero-bg("<%= asset_path 'img/hero/wave-hero.png' %>", #432c51);
+  @include hero-bg("<%= asset_path 'img/hero/wave-hero.png' %>", rgba(#432c51, 0.86));
 }
 
 @mixin page-hero() {
-  @include hero-bg("<%= asset_path 'img/hero/page-hero.png' %>", #2f2639);
+  @include hero-bg("<%= asset_path 'img/hero/page-hero.png' %>", rgba(#2f2639, 0.86));
 }
 
 .hero {

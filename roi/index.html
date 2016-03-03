@@ -1,0 +1,44 @@
+---
+layout: default
+title: Return on Investment
+pageClass: roi
+hero:
+  small-title: Solution
+  title: Return on Investment
+  description: >
+    Lorem ipsum dolor sit amet, elit consectetur adipisicing elit, sed
+    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+---
+{% include partials/hero.html %}
+
+<div class="see-your-roi">
+  <form class="onboard-form">
+    <label for="num-onboard">How many employees do you onboard?</label>
+    <div class="input-group">
+      <input type="number" id="num-onboard" placeholder="# per month">
+      <input type="submit" class="btn btn-primary" value="See your roi">
+    </div>
+  </form>
+  <div class="your-savings" data-text="Savings">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="small-title">Pre employment screening</div>
+        <div class="amount">$0</div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-title">Drug testing</div>
+        <div class="amount">$0</div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-title">application tracking</div>
+        <div class="amount">$0</div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="small-title">total</div>
+        <div class="amount">$0</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include partials/get-started-cta-square.html %}
