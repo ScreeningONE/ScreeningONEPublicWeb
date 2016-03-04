@@ -13,7 +13,131 @@ pageClass: contact
       </div>
     </div>
     <div class="row">
-      .col-xs-24
+      <div class="col-xs-24 col-md-18">
+        <form class="contact-form">
+          <div class="row form-header">
+            <div class="col-xs-24">
+              <label>Your details</label>
+            </div>
+          </div>
+          <div class="row form-textbox">
+            <div class="col-xs-12 col-sm-8">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-firstname" placeholder="Jane">
+                <label for="form-firstname">First</label>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-lastname" placeholder="Doe">
+                <label for="form-lastname">Last</label>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-company" placeholder="ScreeningOne">
+                <label for="form-company">Company Name</label>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-city" placeholder="Texas">
+                <label for="form-city">City</label>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-phone" placeholder="(000) 000-0000">
+                <label for="form-phone">Phone number</label>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-8">
+              <div class="form-textbox-wrap">
+                <input type="email" id="form-email" placeholder="example@mail.com">
+                <label for="form-email">Email address</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row form-checkbox">
+            <div class="col-xs-24">
+              <label>I'm Interseted In:</label>
+              <div class="form-checkbox-wrap">
+                <input type="checkbox" id="form-background-screening">
+                <label for="form-background-screening">Background Screening</label>
+              </div>
+              <div class="form-checkbox-wrap">
+                <input type="checkbox" id="form-drug-testing">
+                <label for="form-drug-testing">Drug Testing</label>
+              </div>
+              <div class="form-checkbox-wrap">
+                <input type="checkbox" id="form-tech-demo">
+                <label for="form-tech-demo">Technology Demo</label>
+              </div>
+              <div class="form-checkbox-wrap">
+                <input type="checkbox" id="form-application-tracking">
+                <label for="form-application-tracking">Application Tracking</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row form-textarea">
+            <div class="col-xs-24">
+              <textarea rows="7" placeholder="Question or comments..."></textarea>
+            </div>
+          </div>
+
+          <div class="row form-footer">
+            <div class="col-xs-24 col-sm-14 col-md-15 col-lg-12">
+              <label for="form-how-hear">How did you hear about us?</label>
+              <div class="form-select-wrap">
+                <select id="form-how-hear">
+                  <option>Dog</option>
+                  <option>Friend</option>
+                  <option>ApplicantOne</option>
+                  <option>Google or other search</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-xs-24 col-sm-10 col-md-9 col-lg-12">
+              <input type="submit" class="btn btn-primary" value="Send Message">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-xs-24 col-md-6">
+        <div class="call-sales">
+          <div class="header">Call sales 888.325.6511</div>
+          <ul class="content">
+            <li>
+              <strong>Support weekdays</strong>
+              <div>8 a.m. to 8 p.m. EST</div>
+              <div>(5 a.m. to 5 p.m. PST)</div>
+            </li>
+
+            <li>
+              <strong>Fax (both locations):</strong>
+              <strong>888.216.1003</strong>
+            </li>
+
+            <li class="clearfix hidden-md hidden-lg"></li>
+
+            <li>
+              <strong>East Coast Office:</strong>
+              <div>1860 N. Avenida Republica de Cuba,</div>
+              <div>Tampa, FL 33605</div>
+            </li>
+
+            <li>
+              <strong>West Coast Office:</strong>
+              <div>2233 W. 190th Street</div>
+              <div>Torrance, CA 90504</div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+{% include partials/accreditations.html %}
