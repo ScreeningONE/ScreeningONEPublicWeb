@@ -2,11 +2,28 @@
 layout: default
 title: Contact
 pageClass: contact
+interestedInOptions:
+  - ApplicantOne (ATS)
+  - Video Interviewing
+  - Background Screening
+  - Drug Screening
+  - Technology Demonstration
 ---
 {% include partials/request-callback.html %}
 
 <div class="contact-container">
   <div class="container">
+    <script>
+      if (location.search === '?success=true') {
+        document.write('<div class="row">');
+        document.write('<div class="col-xs-24">');
+        document.write('<div class="alert alert-success" role="alert">');
+        document.write('Thanks for contacting us. We\'ll be in touch.');
+        document.write('</div>');
+        document.write('</div>');
+        document.write('</div>');
+      }
+    </script>
     <div class="row">
       <div class="col-xs-24">
         <h2 class="title">Contact Us</h2>
@@ -14,7 +31,16 @@ pageClass: contact
     </div>
     <div class="row">
       <div class="col-xs-24 col-md-18">
-        <form class="contact-form">
+        <form class="contact-form" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+          <input type=hidden name="oid" value="00D500000007IlS">
+          <script>
+          var address = location.href.slice(0, location.href.indexOf(location.pathname));
+          document.write('<input type="hidden" name="retURL" value="' + address + '{{ site.baseurl }}/contact/?success=true">');
+          </script>
+          <!-- <input type="hidden" name="debug" value="1">-->
+          <!-- <input type="hidden" name="debugEmail" value="test@screeningone.com"> -->
+          <!-- <input  id="state" maxlength="20" name="state" size="20" type="text" />  -->
+
           <div class="row form-header">
             <div class="col-xs-24">
               <label>Your details</label>
@@ -23,37 +49,37 @@ pageClass: contact
           <div class="row form-textbox">
             <div class="col-xs-12 col-sm-8">
               <div class="form-textbox-wrap">
-                <input type="text" id="form-firstname" placeholder="Jane">
+                <input type="text" id="form-firstname" placeholder="Jane" name="first_name" maxlength="40">
                 <label for="form-firstname">First</label>
               </div>
             </div>
             <div class="col-xs-12 col-sm-8">
               <div class="form-textbox-wrap">
-                <input type="text" id="form-lastname" placeholder="Doe">
+                <input type="text" id="form-lastname" placeholder="Doe" name="last_name" maxlength="40">
                 <label for="form-lastname">Last</label>
               </div>
             </div>
             <div class="col-xs-12 col-sm-8">
               <div class="form-textbox-wrap">
-                <input type="text" id="form-company" placeholder="ScreeningOne">
+                <input type="text" id="form-company" placeholder="ScreeningOne" name="company" maxlength="40">
                 <label for="form-company">Company Name</label>
               </div>
             </div>
             <div class="col-xs-12 col-sm-8">
               <div class="form-textbox-wrap">
-                <input type="text" id="form-city" placeholder="Texas">
+                <input type="text" id="form-city" placeholder="Texas" name="city" maxlength="40">
                 <label for="form-city">City</label>
               </div>
             </div>
             <div class="col-xs-12 col-sm-8">
               <div class="form-textbox-wrap">
-                <input type="text" id="form-phone" placeholder="(000) 000-0000">
+                <input type="tel" id="form-phone" placeholder="(000) 000-0000" name="phone" maxlength="40">
                 <label for="form-phone">Phone number</label>
               </div>
             </div>
             <div class="col-xs-12 col-sm-8">
               <div class="form-textbox-wrap">
-                <input type="email" id="form-email" placeholder="example@mail.com">
+                <input type="email" id="form-email" placeholder="example@mail.com" name="email" maxlength="80">
                 <label for="form-email">Email address</label>
               </div>
             </div>
@@ -62,28 +88,18 @@ pageClass: contact
           <div class="row form-checkbox">
             <div class="col-xs-24">
               <label>I'm Interseted In:</label>
+              {% for interest in page.interestedInOptions %}
               <div class="form-checkbox-wrap">
-                <input type="checkbox" id="form-background-screening">
-                <label for="form-background-screening">Background Screening</label>
+                <input type="checkbox" id="form-interested-in-{{ forloop.index }}" name="00N50000003V4JK" value="{{ interest }}">
+                <label for="form-interested-in-{{ forloop.index }}">{{ interest }}</label>
               </div>
-              <div class="form-checkbox-wrap">
-                <input type="checkbox" id="form-drug-testing">
-                <label for="form-drug-testing">Drug Testing</label>
-              </div>
-              <div class="form-checkbox-wrap">
-                <input type="checkbox" id="form-tech-demo">
-                <label for="form-tech-demo">Technology Demo</label>
-              </div>
-              <div class="form-checkbox-wrap">
-                <input type="checkbox" id="form-application-tracking">
-                <label for="form-application-tracking">Application Tracking</label>
-              </div>
+              {% endfor %}
             </div>
           </div>
 
           <div class="row form-textarea">
             <div class="col-xs-24">
-              <textarea rows="7" placeholder="Question or comments..."></textarea>
+              <textarea rows="7" placeholder="Question or comments..." name="00N50000003V4JP" maxlength="255"></textarea>
             </div>
           </div>
 
@@ -91,11 +107,71 @@ pageClass: contact
             <div class="col-xs-24 col-sm-14 col-md-15 col-lg-12">
               <label for="form-how-hear">How did you hear about us?</label>
               <div class="form-select-wrap">
-                <select id="form-how-hear">
-                  <option>Dog</option>
-                  <option>Friend</option>
-                  <option>ApplicantOne</option>
-                  <option>Google or other search</option>
+                <select id="form-how-hear" name="lead_source">
+                  <option value="">No Selection</option><option value="700credit">700credit</option>
+                  <option value="Account Intelligence">Account Intelligence</option>
+                  <option value="ApplicantONE Launch Email Campaign">ApplicantONE Launch Email Campaign</option>
+                  <option value="Arizona Multihousing Conference 2007">Arizona Multihousing Conference 2007</option>
+                  <option value="ASA 2007">ASA 2007</option>
+                  <option value="ASHHRA 2010">ASHHRA 2010</option>
+                  <option value="Association of Legal Administrators 2014">Association of Legal Administrators 2014</option>
+                  <option value="Austin Computing">Austin Computing</option>
+                  <option value="AYP Conference FL 2014">AYP Conference FL 2014</option>
+                  <option value="Client Referral Program">Client Referral Program</option>
+                  <option value="Cold Call">Cold Call</option>
+                  <option value="Convergence">Convergence</option>
+                  <option value="Current Customer">Current Customer</option>
+                  <option value="Customer Referral">Customer Referral</option>
+                  <option value="CVTA 2007 Spring Conf.">CVTA 2007 Spring Conf.</option>
+                  <option value="CVTA 2014">CVTA 2014</option>
+                  <option value="CVTA Membership">CVTA Membership</option>
+                  <option value="Email Blast">Email Blast</option>
+                  <option value="Employee Referral">Employee Referral</option>
+                  <option value="Employers Group">Employers Group</option>
+                  <option value="Facticon">Facticon</option>
+                  <option value="Hoovers">Hoovers</option>
+                  <option value="HotlinkHR">HotlinkHR</option>
+                  <option value="HR Florida 2007">HR Florida 2007</option>
+                  <option value="In-Bound Phone Call">In-Bound Phone Call</option>
+                  <option value="Industry Target">Industry Target</option>
+                  <option value="Logos">Logos</option>
+                  <option value="Mailing">Mailing</option>
+                  <option value="Mosaic Interactive, LLC">Mosaic Interactive, LLC</option>
+                  <option value="MoveFrog">MoveFrog</option>
+                  <option value="NAA Conference 2007">NAA Conference 2007</option>
+                  <option value="NARPM 2007">NARPM 2007</option>
+                  <option value="NARPM Membership">NARPM Membership</option>
+                  <option value="National Safe Environment Conference">National Safe Environment Conference</option>
+                  <option value="Neighborscreen">Neighborscreen</option>
+                  <option value="New Client Promotion">New Client Promotion</option>
+                  <option value="Newspaper/Advertisement">Newspaper/Advertisement</option>
+                  <option value="Omnia Group">Omnia Group</option>
+                  <option value="Omni Group">Omni Group</option>
+                  <option value="Pathfinder">Pathfinder</option>
+                  <option value="PayLease">PayLease</option>
+                  <option value="Postcard 2008">Postcard 2008</option>
+                  <option value="Raindance Partners">Raindance Partners</option>
+                  <option value="Recruiting Trends 2014">Recruiting Trends 2014</option>
+                  <option value="RentTrack">RentTrack</option>
+                  <option value="Research">Research</option>
+                  <option value="Reynolds &amp; Reynolds">Reynolds &amp; Reynolds</option>
+                  <option value="RFP">RFP</option>
+                  <option value="Ropella">Ropella</option>
+                  <option value="Safe Environment Conference 2014">Safe Environment Conference 2014</option>
+                  <option value="Seminar">Seminar</option>
+                  <option value="SHRM">SHRM</option>
+                  <option value="SHRM 2012">SHRM 2012</option>
+                  <option value="SHRM 2013">SHRM 2013</option>
+                  <option value="SHRM 2014">SHRM 2014</option>
+                  <option value="SHRM Staffing Management Conference 2007">SHRM Staffing Management Conference 2007</option>
+                  <option value="SHRM Talent Conference 2015">SHRM Talent Conference 2015</option>
+                  <option value="SHRM Talent Management Conference 2014">SHRM Talent Management Conference 2014</option>
+                  <option value="Trade Show">Trade Show</option>
+                  <option value="VA Motor Vehicle Dealer Board">VA Motor Vehicle Dealer Board</option>
+                  <option value="VAOA">VAOA</option>
+                  <option value="Verifications">Verifications</option>
+                  <option value="Website">Website</option>
+                  <option value="YMCA HR Forum 2014">YMCA HR Forum 2014</option>
                 </select>
               </div>
             </div>
