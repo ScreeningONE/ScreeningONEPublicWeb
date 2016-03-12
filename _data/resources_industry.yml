@@ -1,65 +1,29 @@
 - title: TransUnion Agreement
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+  link: https://www.transunion.com/resources/transunion/doc/compliance-and-legislative-updates/Notice_to_Users_of_Consumer_Reports_2012.pdf
+  desc: > 
+      Informs users of their legal obligations.
 
 - title: Notice to Furnishers of Information
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+  link: https://www.consumer.ftc.gov/articles/pdf-0092-notice-to-furnishers.pdf
+  desc: > 
+      Obligations of furnishers under the FCRA
 
-- title: FCRA An Employer’s Guide and Overview
-  link: http://google.com/
+- title: FCRA An Employers Guide and Overview
+  link: insdustry/FCRAGuide.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
-
-- title: Final Notice of Adverse Action
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+      Legal steps before you can get a consumer report
 
 - title: Tips for a Better Background Check
-  link: http://google.com/
+  link: industry/TipsforaBetterBackgroundCheck.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+      Several ways to improve screening results
 
 - title: Experian Access Security Requirements
-  link: http://google.com/
+  link: industry/XPAccessSecurityDoc.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+      Notices regarding Experian credit reports
 
 - title: Experian Certification of Use for Employment Insight Reports
-  link: http://google.com/
+  link: Experian-Certification-of-Use-for-Employment-Insight-Reports.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
-
-- title: Experian FICO Agreement
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
-
-- title: TransUnion Agreement
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
-
-- title: Notice to Furnishers of Information
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
-
-- title: FCRA An Employer’s Guide and Overview
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+      Requirements for employment insight reports

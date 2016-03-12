@@ -1,53 +1,69 @@
-- title: The Fair Credit Reporting Act
-  link: http://google.com/
+- title: Fair Credit Reporting Act
+  link: https://www.consumer.ftc.gov/sites/default/files/articles/pdf/pdf-0096-fair-credit-reporting-act.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
-
-- title: Summary of Your Rights under FCRA
-  link: http://google.com/
-  desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+     Summary of your major rights under the FCRA
 
 - title: Summary of Your Rights under California Civil Code
-  link: http://google.com/
+  link: consumer/CaliforniaNotice.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+    Notice regarding background & credit checks in California
 
-- title: Authorization for Employment Screening
-  link: http://google.com/
+- title: Authorization for Background Check
+  link: consumer/Authorization.docx
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+    Consent for employer to provide to candidate
 
-- title: Authorization for Contractor Screening
-  link: http://google.com/
+- title: Disclosure for Consumer Reports
+  link: consumer/DisclosureConsumerReport.docx
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+    Informs consumer on background screening
 
-- title: Consumer Dispute
-  link: http://google.com/
+- title: Consumer Background Information
+  link: consumer/ConsumerBackgroundInformation.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+    Personal information for background screening 
 
-- title: Notice to Consumer Reporting Identity Theft
-  link: http://google.com/
+- title: Criminal History Background
+  link: consumer/CriminalHistoryBackgroundConfidentialIndividualizedAssessment.doc
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+    Individualized assessment form for criminal history 
 
-- title: I-9 Verification Addendum
-  link: http://google.com/
+- title: Pre Adverse Action Notice
+  link: consumer/PreAdverseActionNotice.docx
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+    Inform applicant about adverse actions 
 
-- title: Notice to Users of Consumer Reports
-  link: http://google.com/
+- title: New York Fair Chance Act
+  link: consumer/NYCFairChanceAct.pdf
   desc: >
-    Lorem ipsum dolor sit amet, consectetur
-    adipisicing elit, sed do tempor...
+    Provides applicant chance to respond to findings
+
+- title: Supplemental Disclosure Form
+  link: consumer/SupplementalDisclosureInvestigativeConsumerReport.docx
+  desc: >
+    Discloser for investigative consumer reports
+
+- title: Summary of Your Rights under New Jersey
+  link: consumer/NewJerseyNotice.pdf
+  desc: >
+    FCRA disclosure for New Jersey 
+
+- title: Credit Check Notice for Vermont
+  link: consumer/VermontNoticeCreditChecks.pdf
+  desc: >
+    Disclosure for Vermont credit checks
+
+- title: Summary of Your Rights under Washington
+  link: consumer/WashingtonNotice.pdf
+  desc: >
+    FCRA disclosure for Washington
+
+- title: Correcting Records in Massachusetts
+  link: consumer/Massachusetts Notice.pdf
+  desc: >
+    MA Information if criminal record reported 
+
+- title: I-9 Employment Eligibility Verification
+  link: https://www.uscis.gov/sites/default/files/files/form/i-9.pdf
+  desc: >
+    Employers are responsible to verify employment
