@@ -1,0 +1,266 @@
+.page.contact {
+  .request-callback {
+    background: #f5f8fb;
+  }
+}
+
+.contact-container {
+  padding: 50px 0;
+
+  h2.title {
+    margin-bottom: 30px;
+  }
+}
+
+$contact-border-color: #c8c8c8;
+$contact-border-radius: 5px;
+
+form.contact-form {
+  color: $secondary-color;
+  border: 1px solid $contact-border-color;
+  border-radius: $contact-border-radius;
+  
+  .form-header {
+    padding: 10px 5px;
+    background: #f9f9fa;
+    margin: 0;
+    border-top-left-radius: $contact-border-radius;
+    border-top-right-radius: $contact-border-radius;
+    border-bottom: 1px solid $contact-border-color;
+  }
+
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .form-textbox, .form-checkbox,
+  .form-textarea, .form-footer {
+    margin: 0;
+
+    & > div {
+      padding: 0;
+    }
+  }
+
+  .form-textbox {
+    & > div {
+      border-right: 1px solid $contact-border-color;
+      border-bottom: 1px solid $contact-border-color;
+
+      @media(max-width: $screen-sm-min - 1) {
+        &:nth-child(2n) {
+          border-right: 0;
+        }
+      }
+      
+      @media(min-width: $screen-sm-min) {
+        &:nth-child(3n) {
+          border-right: 0;
+        }
+      }
+    }
+  }
+
+  .form-textbox-wrap {
+    padding: 10px 15px;
+    position: relative;
+
+    input {
+      position: relative;
+      z-index: 5;
+      display: block;
+      padding: 0;
+      border: 0;
+      width: 100%;
+      outline: 0;
+      font-size: 20px;
+      margin-top: 20px;
+      background: transparent;
+
+      &:focus + label {
+        color: $brand-primary;
+        background: lighten($brand-primary, 47);
+      }
+    }
+
+    label {
+      display: block;
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      padding: 10px 0 0 15px;
+    }
+  }
+
+  .form-checkbox {
+    padding: 0 15px;
+    border-bottom: 1px solid $contact-border-color;
+  }
+
+  .form-checkbox-wrap {
+    display: inline-block;
+    margin: 15px 15px 16px;
+
+    input {
+      display: none;
+
+      &:checked + label {
+        &:after {
+          content: "x";
+        }
+      }
+    }
+
+    label {
+      cursor: pointer;
+      text-transform: initial;
+      font-weight: 400;
+      font-size: 13px;
+      letter-spacing: 0;
+      position: relative;
+      padding-left: 20px;
+
+      &:before, &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      &:before {
+        width: 16px;
+        height: 16px;
+        border-radius: 3px;
+        border: 1px solid lighten($contact-border-color, 5);
+      }
+
+      &:after {
+        color: lighten($secondary-color, 20);
+        font-weight: bold;
+        width: 15px;
+        line-height: 9px;
+        text-align: center;
+      }
+    }
+  }
+
+  .form-textarea {
+    textarea {
+      padding: 10px 15px;
+      font-size: 20px;
+      display: block;
+      width: 100%;
+      border: 0;
+      outline: 0;
+      resize: none;
+    }
+  }
+
+  .form-footer {
+    border-top: 1px solid $contact-border-color;
+    text-align: center;
+
+    @media(min-width: $screen-sm-min) {
+      text-align: left;
+    }
+
+    input.btn {
+      text-transform: initial;
+      font-size: 20px;
+      display: block;
+      padding: 20px 0;
+      border-radius: 0;
+      width: 100%;
+      border-bottom-right-radius: $contact-border-radius;
+    }
+
+    label {
+      margin: 15px 15px 0;
+      display: block;
+
+      @media(min-width: $screen-sm-min) {
+        display: inline-block;
+        margin: 0 15px;
+      }
+    }
+
+  }
+
+  .form-select-wrap {
+    position: relative;
+    display: inline-block;
+
+    select {
+      border-color: lighten($contact-border-color, 5);
+      margin: 13px 10px 12px;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.call-sales {
+  background: #32628d;
+  color: #fff;
+
+  .header {
+    background: #28547b;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  ul.content {
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+    font-size: 15px;
+    line-height: 140%;
+    overflow: hidden;
+
+    li {
+      padding: 15px 0 15px 50px;
+
+      @media(max-width: $screen-md-min - 1) {
+        width: 50%;
+
+        &:nth-child(2n) {
+          float: right;
+        }
+
+        &:nth-child(2n+1) {
+          float: left;
+        }
+      }
+
+
+      &:not(.clearfix):before {
+        content: "";
+        float: left;
+        display: inline-block;
+        margin: 4px 0 0 -30px;
+        background: url($icon-sprite) no-repeat -31px -100px;
+        width: 16px;
+        height: 14px;
+      }
+      strong {
+        display: block;
+      }
+    }
+  }
+}
