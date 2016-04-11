@@ -1,50 +1,10 @@
-﻿<!DOCTYPE html>
-<html>
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+title: Careers
+pageClass: careers
+---
 
-  <title>Careers</title>
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,400italic,600italic' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="stylesheet" href="/assets/app-c863b80e99f6f6a970d0b0b98ceb2196.css">
-</head>
-
-  <body class="page careers">
-    <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"></a>
-      <div class="navbar-phone hidden-xs">Call: 888.327.6511</div>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/how-it-works/">How it Works</a></li>
-        <li><a href="/the-difference/">ScreeningOne Difference</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
-          <ul class="dropdown-menu">
-            <li><a href="/pre-employment-screening/">Pre-employment Screening</a></li>
-            <li><a href="/drug-testing/">Drug Testing</a></li>
-            <li><a href="/applicant-tracking/">Applicant Tracking</a></li>
-            <li><a href="/sample-report/">Sample Report</a></li>
-          </ul>
-        </li>
-        <li><a href="/resources/">Resources</a></li>
-        <li><a href="https://screeningone.instascreen.net/sso/login.taz" class="btn btn-primary">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div class="contact-container">
+<div class="contact-container">
   <div class="container">
     <script>
       if (location.search === '?success=true') {
@@ -78,6 +38,11 @@
               <div>Tampa, FL 33605</div>
             </li>
 
+            <li>
+              <strong>West Coast Office:</strong>
+              <div>2233 W. 190th Street</div>
+              <div>Torrance, CA 90504</div>
+            </li>
           </ul>
         </div>
       </div>
@@ -85,77 +50,4 @@
   </div>
 </div>
 
-<div class="accreditations">
-  <div class="small-title">Trusted and used daily by</div>
-  <ul class="logos">
-    <li class="kia"></li>
-    <li class="hampton"></li>
-    <li class="bgc"></li>
-    <li class="goodwill"></li>
-  </ul>
-</div>
-
-
-    <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-24 col-sm-11 col-md-6">
-        <div class="logo"></div>
-        <div class="description">
-          <p>
-            <strong>ScreeningOne</strong> offers a
-            comprehensive suite of screening
-            solutions and we have one of the
-            most extensive networks of record
-            sources in the industry.
-          </p>
-        </div>
-        <a href="/privacy-policy/">Privacy Policy</a>
-        <a href="/sitemap/">Sitemap</a>
-        <div class="copyright">&copy; ScreeningOne 2016</div>
-      </div>
-      <div class="col-xs-24 col-sm-11 col-sm-offset-2 col-md-6 col-md-offset-1">
-        <h2>Solutions</h2>
-        <a href="/how-it-works/">How it works</a>
-        <a href="/pre-employment-screening/">Pre Employment Screening</a>
-        <a href="/drug-testing/">Drug Testing</a>
-        <a href="/applicant-tracking/">Application Tracking</a>
-        <a href="/sample-report/">Sample Report</a>
-      </div>
-      <div class="col-xs-24 col-sm-11 col-md-4">
-        <h2>Company</h2>
-        <a href="/team/">Team</a>
-        <a href="/careers/">Careers</a>
-        <a href="/contact/">Contact Us</a>
-        <a href="https://www.screeningone.com/Account/LogOn?portal=admin&ReturnURL=%2f&ClientID=">Billing Login</a>
-      </div>
-      <div class="col-xs-24 col-sm-11 col-sm-offset-2 col-md-7 col-md-offset-0">
-        <h2>Resources</h2>
-        <p>One simple PDF to share with your team:</p>
-        <a href="/the-difference/">ScreeningOne Overview</a>
-        <a href="/resources/">More Downloadable Resources</a>
-        <hr>
-        <div class="call-us"><strong>Call Us Now: 888.327.6511</strong><a href="http://www.bbb.org/west-florida/business-reviews/background-screening-services/screening-one-in-tampa-fl-90078037#bbbseal"><img src="/assets/img/bbb-be947ba162a82a0dcb2fe6969e7bb287.png"></a></div>
-      </div>
-    </div>
-  </div>
-</footer>
-<script type="text/javascript">
-piAId = '167622';
-piCId = '1094';
- 
-(function() {
-function async_load(){
-var s = document.createElement('script'); s.type = 'text/javascript';
-s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
-var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
-}
-if(window.attachEvent) { window.attachEvent('onload', async_load); }
-else { window.addEventListener('load', async_load, false); }
-})();
-</script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="/assets/app-866e6589caf5b7dedfb75b3546f5bf2a.js" async></script>
-  </body>
-</html>
+{% include partials/accreditations.html %}
