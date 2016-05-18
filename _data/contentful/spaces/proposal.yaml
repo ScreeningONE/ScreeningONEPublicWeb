@@ -1,0 +1,36 @@
+---
+proposal:
+- sys:
+    id: 4hH1EV3JAcqQGwUoKuAOQ8
+  title: Yum Brands
+  author: James Blake
+  proposalDate: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 Z
+  company: Yum! Brands, Inc.
+  location: "Nominating and Governance Committee  \n1441 Gardiner Lane  \nLouisville,
+    Kentucky 40213"
+  textbit: |-
+    ##Screening services can vary dramatically, but it's our approach that sets us apart.
+
+    We're committed to your long-term success, a trusted partner that’s in it for the long haul. 
+
+    We help companies like yours elevate your hiring success. Bad hiring decisions cost time and money, undermine performance, destroy culture and sidetrack careers. To combat this, we've built a service that's designed to provide deeper insight into the candidates you recruit, interview, consider and hire. 
+
+    As a family-owned business we may no longer be small, but it will never be our way to act big. We’ve built an amazing team with amazing people and by practicing what we sell. Our promise is to provide the services you need to play that high-stakes hiring game to win. 
+
+    ScreeningOne is one of the fastest growing background screening companies – it has been recognized on the 2010 and 2011 Inc 5000 List of the fastest growing private companies in America.  In addition, the company was featured on the 2010 and 2011 Tampa Bay Business Journals Fast50 List, which celebrates the fastest growing companies in the Tampa area.
+
+    I'm excited to share with you our stable of services that we'll tailor to you.
+  proposalPricing: |
+    Employment Screening a la carte Products|Average turn around time|Itemized Price
+    ---|---|---
+    Federal Criminal Records Search|30 Minutes to Same Day|$2.00
+    Social Security I-9 Verification|15 Minutes|$2.50
+    Motor Vehicle Record Search\**|Instant in 46 states / Same Day to 24 hrs others|$2.75
+    National Wants & Warrants|Same Day|$4.25
+    Professional References\**|34 Hours|$6.00 each
+    9-10 PANEL Drug Screening\**|Negative: 24 to 34 hrs. / Positive: 48 to 72 hrs.|$31.00
+    State Criminal Records Search\**|Same Day |$7.00
+
+    \** Statutory or Additional fees may be imposed with the corresponding products and will be billed to the client only where applicable as a pass through charge (Fee Schedule Available upon Request).
+
+    **Please note:** It is screeningONE’s standard operating procedure to verify any aliases revealed in a Social Security Trace by conducting a National Criminal Search on each alias.  This search will be charged at a discounted rate of $4.00 per alias.

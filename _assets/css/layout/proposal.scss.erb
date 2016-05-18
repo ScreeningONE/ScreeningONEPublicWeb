@@ -79,7 +79,7 @@ body.proposal {
     background: #fff;
     padding: 50px 0;
 
-    .title {
+    h2 {
       color: #364f70;
       font-weight: 300;
       font-size: 32px;
@@ -166,6 +166,12 @@ body.proposal {
     .featured {
       &.featured-fcra {
         background-image: url(<%= asset_path 'img/proposal/fcra.png' %>)
+      }
+      &.featured-in-house {
+        background-image: url(<%= asset_path 'img/proposal/in-house.png' %>)
+      }
+      &.featured-protecting {
+        background-image: url(<%= asset_path 'img/proposal/protecting.png' %>)
       }
     }
   }
@@ -411,6 +417,12 @@ body.proposal {
       }
     }
 
+    thead {
+      tr {
+        background: #fff;
+      }
+    }
+
     td, th {
       padding: 20px;
 
@@ -423,10 +435,6 @@ body.proposal {
       text-transform: uppercase;
       letter-spacing: 1px;
       font-size: 13px;
-
-      tr {
-        background: #fff;
-      }
     }
 
     td {
@@ -442,13 +450,10 @@ body.proposal {
     }
   }
 
-  .desc {
+  p {
     text-align: center;
-
-    p {
-      font-size: 17px;
-      letter-spacing: 180%;
-      margin: 0 0 30px;
-    }
+    font-size: 17px;
+    letter-spacing: 180%;
+    margin: 0 0 30px;
   }
 }

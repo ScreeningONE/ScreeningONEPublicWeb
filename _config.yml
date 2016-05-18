@@ -17,3 +17,9 @@ assets:
   debug: false
   js_compressor: uglifier
   css_compressor: sass
+
+contentful:
+  spaces:
+    - proposal:
+        space: lxg5s6vl1fqd
+        access_token: 2c06bf2b9a93dba7d0c39e0b727e6cee9d862a0ef39ebe8e40216b2a3823ce2e
