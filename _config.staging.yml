@@ -1,0 +1,21 @@
+baseurl: /screeningone
+title: ScreeningOne
+markdown: kramdown
+highlighter: null
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - bin
+  - README.md
+  - .env
+  - .*.env
+  - s3_website.yml
+
+assets:
+  baseurl: /screeningone/assets/
+  dirname: assets
+  sources:
+    - _assets
+  debug: false
+  js_compressor: uglifier
+  css_compressor: sass
