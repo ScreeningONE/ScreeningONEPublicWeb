@@ -23,3 +23,10 @@ contentful:
     - proposal:
         space: lxg5s6vl1fqd
         access_token: 2c06bf2b9a93dba7d0c39e0b727e6cee9d862a0ef39ebe8e40216b2a3823ce2e
+
+page_gen-dirs: true
+page_gen:
+  - data: contentful.spaces.proposal.proposal
+    template: proposal
+    name: title
+    dir: proposal

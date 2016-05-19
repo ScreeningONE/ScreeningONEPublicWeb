@@ -25,10 +25,11 @@
             Proposal For:
             <div class="title">{{ page.title }}</div>
             <div class="by">{{ page.author }}</div>
-            <div class="proposal-date">Proposal Date: {{ page.proposal_date }}</div>
+            <div class="proposal-date">Proposal Date: {{ page.proposalDate | date: "%m.%d.%y" }}</div>
           </div>
           <div class="p-container">
-            <p>{{ page.location }}</p>
+            <p><em>{{ page.company }}</em></p>
+            <p>{{ page.location | markdownify }}</p>
           </div>
         </div>
       </div>
@@ -42,7 +43,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-24">
-            {{ page.proposal_text }}
+            {{ page.textbit | markdownify }}
 
             <div class="pull-right accreditation">
               {% image 'img/proposal/bbb.png' %}
@@ -457,7 +458,7 @@
         <div class="row">
           <div class="col-xs-24">
             <h2 class="title">Turn around Time and Straightforward Pricing</h2>
-            {{ page.proposal_pricing }}
+            {{ page.proposalPricing | markdownify }}
           </div>
         </div>
       </div>

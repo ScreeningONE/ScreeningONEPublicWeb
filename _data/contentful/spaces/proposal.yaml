@@ -2,6 +2,7 @@
 proposal:
 - sys:
     id: 4hH1EV3JAcqQGwUoKuAOQ8
+  slug: yum-brands
   title: Yum Brands
   author: James Blake
   proposalDate: !ruby/object:DateTime 2016-01-01 00:00:00.000000000 Z
