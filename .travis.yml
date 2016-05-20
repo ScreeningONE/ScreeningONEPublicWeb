@@ -9,3 +9,6 @@ script:
  - ./bin/jekyll contentful
  - ./bin/jekyll build --config _config.staging.yml
  - ./bin/s3_website push
+notifications:
+  slack:
+    on_success: always
