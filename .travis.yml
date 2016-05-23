@@ -6,6 +6,7 @@ script:
  - ./bin/jekyll build
  - ./bin/publish
  - rm -R ./_site
+ - ./bin/jekyll contentful
  - ./bin/jekyll build --config _config.staging.yml
  - ./bin/s3_website push
 notifications:
