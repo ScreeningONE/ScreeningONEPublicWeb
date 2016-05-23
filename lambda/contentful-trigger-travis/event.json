@@ -1,0 +1,20 @@
+{
+  "sys": {
+    "type": "Entry",
+    "id": "cat",
+    "space": {"sys": {"type": "Link", "linkType": "Space", "id": "example"}},
+    "contentType": {"sys": {"type": "Link", "linkType": "ContentType", "id": "cat"}},
+    "createdAt": "2013-03-26T00:13:37.123Z",
+    "updatedAt": "2013-03-26T00:13:37.123Z",
+    "revision": 1
+  },
+  "fields": {
+    "name": {"en-US": "Nyan cat"},
+    "color": {"en-US": "Rainbow"},
+    "nyan": {"en-US": true},
+    "birthday": {"en-US": "2011-04-02T00:00:00.000Z"},
+    "diary": {"en-US": "Nyan cat has an epic rainbow trail."},
+    "likes": {"en-US": ["rainbows", "fish"]},
+    "bestFriend": {"en-US": {"type": "Link", "linkType": "Entry", "id": "happycat"}}
+  }
+}
