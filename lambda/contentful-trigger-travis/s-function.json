@@ -14,7 +14,7 @@
   "endpoints": [
     {
       "path": "contentful-trigger-travis",
-      "method": "GET",
+      "method": "POST",
       "type": "AWS",
       "authorizationType": "none",
       "authorizerFunction": false,

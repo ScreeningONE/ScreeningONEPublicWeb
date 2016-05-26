@@ -3,12 +3,16 @@ rvm:
   - 2.2
 bundler_args: ""
 script:
+ - JEKYLL_ENV=production ./bin/rake config
+ - JEKYLL_ENV=production ./bin/rake contentful
  - ./bin/jekyll build
+ - PUBLISH_AWS_ACCESS_KEY_ID=$PRODUCTION_PUBLISH_AWS_ACCESS_KEY_ID PUBLISH_AWS_SECRET_ACCESS_KEY=$PRODUCTION_PUBLISH_AWS_SECRET_ACCESS_KEY PUBLISH_S3_BUCKET=$PRODUCTION_PUBLISH_S3_BUCKET ./bin/s3_website push
  - ./bin/publish
  - rm -R ./_site
- - ./bin/jekyll contentful
- - ./bin/jekyll build --config _config.staging.yml
- - ./bin/s3_website push
+ - JEKYLL_ENV=staging ./bin/rake config
+ - JEKYLL_ENV=staging ./bin/rake contentful
+ - ./bin/jekyll build
+ - PUBLISH_AWS_ACCESS_KEY_ID=$STAGING_PUBLISH_AWS_ACCESS_KEY_ID PUBLISH_AWS_SECRET_ACCESS_KEY=$STAGING_PUBLISH_AWS_SECRET_ACCESS_KEY PUBLISH_S3_BUCKET=$STAGING_PUBLISH_S3_BUCKET PUBLISH_S3_KEY_PREFIX=screeningone ./bin/s3_website push
 notifications:
   slack:
     on_success: always

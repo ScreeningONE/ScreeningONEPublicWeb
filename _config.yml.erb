@@ -1,4 +1,4 @@
-baseurl: /screeningone
+<% if ENV['JEKYLL_ENV'] == 'staging' %>baseurl: /screeningone<% end %>
 title: ScreeningOne
 markdown: kramdown
 highlighter: null
@@ -10,9 +10,9 @@ exclude:
   - .env
   - .*.env
   - s3_website.yml
+  - lambda
 
 assets:
-  baseurl: /screeningone/assets/
   dirname: assets
   sources:
     - _assets
@@ -24,7 +24,9 @@ contentful:
   spaces:
     - proposal:
         space: lxg5s6vl1fqd
-        access_token: 2c06bf2b9a93dba7d0c39e0b727e6cee9d862a0ef39ebe8e40216b2a3823ce2e
+        access_token: <%= ENV['CONTENTFUL_ACCESS_TOKEN'] %>
+        content_types:
+          proposal: SlugObfuscator
 
 page_gen-dirs: true
 page_gen:

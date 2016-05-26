@@ -6,6 +6,7 @@ require 'aws-sdk'
 require 'zip'
 
 filename = "build-#{ENV['TRAVIS_BUILD_NUMBER']}-#{ENV['TRAVIS_COMMIT']}.zip"
+destfolder = 'screeningone'
 
 Zip::File.open(filename, Zip::File::CREATE) do |z|
   Dir.glob('_site/**/*.*').each do |path|
@@ -21,7 +22,7 @@ s3 = Aws::S3::Client.new(
 )
 
 File.open(filename, 'rb') do |file|
-  puts "Uploading #{filename} to s3://#{ENV['AWS_S3_BUCKET']}"
-  s3.put_object(bucket: ENV['AWS_S3_BUCKET'], key: filename, body: file)
+  puts "Uploading #{filename} to s3://#{ENV['AWS_S3_BUCKET']}/#{destfolder}"
+  s3.put_object(bucket: ENV['AWS_S3_BUCKET'], key: "#{destfolder}/filename", body: file)
   puts "Done"
 end

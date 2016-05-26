@@ -12,6 +12,8 @@ GEM
     aws-sdk-resources (2.0.26)
       aws-sdk-core (= 2.0.26)
     builder (3.2.2)
+    byebug (8.2.4)
+    coderay (1.1.1)
     colorator (0.1)
     colored (1.2)
     configure-s3-website (1.7.1)
@@ -71,10 +73,19 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
     mercenary (0.3.5)
+    method_source (0.8.2)
     mini_magick (4.2.7)
     multi_json (1.11.2)
     multi_xml (0.5.5)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-byebug (3.3.0)
+      byebug (~> 8.0)
+      pry (~> 0.10)
     rack (1.6.4)
+    rake (11.1.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
@@ -87,6 +98,7 @@ GEM
       thor (~> 0.18)
     safe_yaml (1.0.4)
     sass (3.4.22)
+    slop (3.6.0)
     sprockets (2.12.4)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -117,6 +129,8 @@ DEPENDENCIES
   jekyll
   jekyll-assets
   jekyll-contentful-data-import
+  pry-byebug
+  rake
   rubyzip
   s3_website (= 2.11.0)
   uglifier
