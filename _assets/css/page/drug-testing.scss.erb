@@ -1,6 +1,18 @@
+<%
+about_drug_testing = {
+  :uu => '#32358d',
+  :ur => '#31628d',
+  :ma => '#3d2748',
+  :ca => '#c0a02f',
+  :bc => '#364f70',
+  :hc => '#22a59d',
+}
+%>
+
 /**
  * .drug-test-benefits
  * .drug-test-results
+ * .about-drug-testing
  */
 
 .page.drug-testing {
@@ -109,7 +121,7 @@
         &:before, &:after {
           content: "";
           display: inline-block;
-          position: absolute;
+          position: xsolute;
           margin: auto;
           top: 0;
           bottom: 0;
@@ -202,4 +214,87 @@
       }
     }
   }
+}
+
+.about-drug-testing {
+  padding: 50px 0;
+
+  .header {
+    text-align: center;
+
+    .desc {
+      width: 700px;
+      max-width: 100%;
+      font-size: 19px;
+      line-height: 170%;
+      margin: 20px auto 50px;
+    }
+  }
+
+  .footer {
+    margin-top: 30px;
+
+    .btn {
+      font-size: 13px;
+      padding: 10px 0;
+      width: 300px;
+    }
+  }
+
+  .about-list {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+  }
+
+  .about {
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+
+    @media(min-width: $screen-sm-min) {
+      padding: 20px;
+      width: 50%;
+    }
+
+    @media(min-width: $screen-md-min) {
+      padding: 30px;
+      width: 33%;
+    }
+
+    .symbol {
+      font-weight: 300;
+      font-size: 90px;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    .title {
+      @include font-size(19px);
+      margin: 30px 0;
+      font-weight: 600;
+    }
+
+    .desc {
+      p {
+        @include font-size(15px);
+
+        a {
+          font-weight: 600;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  <% about_drug_testing.each_with_index do |(key, value), index| %>
+    .about-<%= key %> {
+      background: <%= value %>;
+    }
+  <% end %>
 }
