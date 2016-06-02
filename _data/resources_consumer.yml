@@ -1,15 +1,18 @@
 - title: Fair Credit Reporting Act
   link: consumer/SummaryofRightsFCRA.pdf
+  link_ES: consumer/SummaryofRightsFCRA_ES.docx
   desc: >
      Summary of your major rights under the FCRA
 
 - title: Authorization for Background Check
   link: consumer/Authorization.docx
+  link_ES: consumer/Authorization_ES.docx
   desc: >
     Consent for employer to provide to candidate
 
 - title: Consumer Background Information
   link: consumer/ConsumerBackgroundInformation.pdf
+  link_ES: consumer/ConsumerBackgroundInformation_ES.docx
   desc: >
     Personal information for background screening 
 
@@ -20,6 +23,7 @@
 
 - title: Disclosure for Consumer Reports
   link: consumer/DisclosureConsumerReport.docx
+  link_ES: consumer/DisclosureConsumerReport_ES.docx
   desc: >
     Informs consumer on background screening
 
@@ -30,6 +34,7 @@
 
 - title: Supplemental Disclosure Form
   link: consumer/SupplementalDisclosureInvestigativeConsumerReport.pdf
+  link_ES: consumer/SupplementalDisclosureConsumerReport_ES.docx
   desc: >
     Supplemental Discloser for investigative consumer reports
 
@@ -40,26 +45,31 @@
 
 - title: Disclosure of Additional State and Local Documentation and Notices
   link: consumer/DisclosureAdditionalStateLocalDocumentsandNotices.docx
+  link_ES: consumer/DisclosureAdditionalStateandLocalDocuments_ES.docx
   desc: >
     Additional state and local documentation and notices
 
 - title: Summary of Your Rights under California Civil Code
   link: consumer/CaliforniaNotice.pdf
+  link_ES: consumer/CANotice_ES.docx
   desc: >
     Notice regarding background & credit checks in California
 
 - title: Summary of Your Rights under Massachusetts
   link: consumer/Massachusetts Notice.pdf
+  link_ES: consumer/MANotice_ES.pdf
   desc: >
     FCRA disclosure for Massachusetts
 
 - title: Summary of Your Rights under New Jersey
   link: consumer/NewJerseyNotice.pdf
+  link_ES: consumer/NJNotice_ES.doc
   desc: >
     FCRA disclosure for New Jersey 
 
 - title: Summary of Your Rights under New York
   link: consumer/NewYorkNotice.pdf
+  link_ES: consumer/NYNotice_ES.docx
   desc: >
     FCRA disclosure for New York
 
@@ -80,11 +90,13 @@
 
 - title: Credit Check Notice for Vermont
   link: consumer/VermontNoticeCreditChecks.pdf
+  link_ES: consumer/VTNoticeCreditChecks_ES.doc
   desc: >
     Disclosure for Vermont credit checks
 
 - title: Summary of Your Rights under Washington
   link: consumer/WashingtonNotice.pdf
+  link_ES: consumer/WashingtonNotice_ES.doc
   desc: >
     FCRA disclosure for Washington
 

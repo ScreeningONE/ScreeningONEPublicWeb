@@ -17,7 +17,12 @@
             <div class="title">{{ resource.title }}</div>
             <div class="desc">
               <p>{{ resource.desc }}</p>
+              {% if resource.link_ES %}
+              <p><a href="{{ resource.link }}">Download - English</a>
+              <br><a href="{{ resource.link_ES }}">Download - Spanish</a></p>
+              {% else %}
               <p><a href="{{ resource.link }}">Download Now</a></p>
+              {% endif %}
             </div>
           </div>
         </div>
