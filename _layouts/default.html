@@ -2,10 +2,14 @@
 <html>
   {% include head.html %}
   <body class="{% if page.pageClass %}page {{ page.pageClass }}{% endif %}">
-    {% include header.html %}
+    {% unless page.hideHeader %}
+      {% include header.html %}
+    {% endunless %}
 
     {{ content }}
 
-    {% include footer.html %}
+    {% unless page.hideFooter %}
+      {% include footer.html %}
+    {% endunless %}
   </body>
 </html>
