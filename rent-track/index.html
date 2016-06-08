@@ -8,7 +8,9 @@ pageClass: rent-track
 <div class="container">
   <div class="row">
     <div class="col-xs-24">
-      <h1>Contact</h1>
+      <h1 class="title text-center">I'm Ready</h1>
+      <div class="desc text-center"><p>We're glad you're interested.</p></div>
+      <hr>
       <script>
         if (location.search === '?success=true') {
           document.write('<div class="form-group">');
@@ -16,7 +18,7 @@ pageClass: rent-track
           document.write('<div class="alert alert-success" role="alert">');
           document.write('Thanks for contacting us. We\'ll be in touch.');
           document.write('</div>');
-          document.write('</div>');
+          document.write('<hr></div>');
           document.write('</div>');
         }
       </script>
@@ -24,6 +26,12 @@ pageClass: rent-track
   </div>
   
   <form class="form-horizontal" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <div class="row">
+      <div class="col-xs-24">
+        <h2 class="text-center">Tell Us About You</h2>
+      </div>
+    </div>
+
     <input type=hidden name="oid" value="00D500000007IlS">
     <input type="hidden" name="lead_source" value="Mailing" />
     <script>
