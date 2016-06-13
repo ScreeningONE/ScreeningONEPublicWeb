@@ -14,7 +14,7 @@
   link: consumer/ConsumerBackgroundInformation.pdf
   link_ES: consumer/ConsumerBackgroundInformation_ES.docx
   desc: >
-    Personal information for background screening 
+    Personal information for background screening
 
 - title: Consumer Dispute Form
   link: consumer/ConsumerDispute.doc
@@ -42,7 +42,7 @@
 - title: Pre Adverse Action Notice
   link: consumer/PreAdverseActionNoticeFTD.docx
   desc: >
-    Inform applicant about adverse actions 
+    Inform applicant about adverse actions
 
 - title: Disclosure of Additional State and Local Documentation and Notices
   link: consumer/DisclosureAdditionalStateLocalDocumentsandNotices.docx
@@ -66,7 +66,7 @@
   link: consumer/NewJerseyNotice.pdf
   link_ES: consumer/NJNotice_ES.doc
   desc: >
-    FCRA disclosure for New Jersey 
+    FCRA disclosure for New Jersey
 
 - title: Summary of Your Rights under New York
   link: consumer/NewYorkNotice.pdf
@@ -77,17 +77,17 @@
 - title: Credit Check Notice for San Francisco - Chinese
   link: consumer/SanFranciscoNoticeChinese.pdf
   desc: >
-    Disclosure for Vermont credit checks
+    Disclosure for San Francisco credit checks
 
 - title: Credit Check Notice for San Francisco - English
   link: consumer/SanFranciscoNoticeEnglish.pdf
   desc: >
-    Disclosure for Vermont credit checks
+    Disclosure for San Francisco credit checks
 
 - title: Credit Check Notice for San Francisco - Spanish
   link: consumer/SanFranciscoNoticeSpanish.pdf
   desc: >
-    Disclosure for Vermont credit checks
+    Disclosure for San Francisco credit checks
 
 - title: Credit Check Notice for Vermont
   link: consumer/VermontNoticeCreditChecks.pdf
@@ -104,7 +104,7 @@
 - title: Correcting Records in Massachusetts
   link: consumer/Massachusetts Notice.pdf
   desc: >
-    MA Information if criminal record reported 
+    MA Information if criminal record reported
 
 - title: I-9 Employment Eligibility Verification
   link: https://www.uscis.gov/sites/default/files/files/form/i-9.pdf

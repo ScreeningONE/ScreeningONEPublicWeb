@@ -3,5 +3,7 @@ _site
 .env
 .DS_Store
 .bundle
+*.swo
+*.swp
 _config.yml
 /_data/contentful/
