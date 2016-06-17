@@ -19,7 +19,7 @@ form.contact-form {
   color: $secondary-color;
   border: 1px solid $contact-border-color;
   border-radius: $contact-border-radius;
-  
+
   .form-header {
     padding: 10px 5px;
     background: #f9f9fa;
@@ -59,7 +59,7 @@ form.contact-form {
           border-right: 0;
         }
       }
-      
+
       @media(min-width: $screen-sm-min) {
         &:nth-child(3n) {
           border-right: 0;
@@ -72,7 +72,7 @@ form.contact-form {
     padding: 10px 15px;
     position: relative;
 
-    input {
+    input, select {
       position: relative;
       z-index: 5;
       display: block;
@@ -87,6 +87,13 @@ form.contact-form {
       &:focus + label {
         color: $brand-primary;
         background: lighten($brand-primary, 47);
+      }
+    }
+
+    select {
+      &:invalid,
+      option:first-child {
+        color: #A9A9A9;
       }
     }
 
