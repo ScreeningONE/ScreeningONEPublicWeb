@@ -1,0 +1,122 @@
+---
+layout: default
+hideHeader: true
+hideFooter: true
+pageClass: applicantone
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <img src="http://www.screeningone.com/assets/img/logo-158aec6a80ade3e0ac09d34de4d8596f.png"/>
+    </div>
+    <div class="col-xs-12">
+      <img src="https://www.applicantone.com/Contante/Images/ApplicantOne_logo_whitebackground.png"/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-24">
+      <h1 class="title text-center">Ready to learn more about ApplicantOne?</h1>
+      <div class="desc text-center"><p>Your job is about to get easier</p></div>
+      <hr>
+      <script>
+        if (location.search === '?success=true') {
+          document.write('<div class="form-group">');
+          document.write('<div class="col-xs-24">');
+          document.write('<div class="alert alert-success" role="alert">');
+          document.write('Thanks for contacting us. We\'ll be in touch.');
+          document.write('</div>');
+          document.write('<hr></div>');
+          document.write('</div>');
+        }
+      </script>
+    </div>
+  </div>
+  
+  <form class="form-horizontal" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+    <div class="row">
+      <div class="col-xs-24">
+        <h2 class="text-center">Tell Us About You</h2>
+      </div>
+    </div>
+
+    <input type=hidden name="oid" value="00D500000007IlS">
+    <input type="hidden" id="leadsource" name="lead_source" value="ApplicantOne" />
+    <script>
+      var address = location.href.slice(0, location.href.indexOf(location.pathname));
+      document.write('<input type="hidden" name="retURL" value="' + address + '{{ site.baseurl }}/applicantone/?success=true">');
+    </script>
+
+    <div class="row">
+      <div class="col-xs-24 col-md-12">
+        <label>Enter your name<sup>*</sup></label>
+        <div class="form-group">
+          <div class="col-xs-24 col-md-12">
+            <input class="form-control" id="first_name" maxlength="40" name="first_name" type="text" placeholder="First name" required />
+          </div>
+          <div class="col-xs-24 col-md-12">
+            <input class="form-control" id="last_name" maxlength="80" name="last_name" type="text" placeholder="Last name" required />
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-24 col-md-12">
+        <label for="email">Enter email address<sup>*</sup></label>
+        <input class="form-control" id="email" maxlength="80" name="email" type="text" placeholder="example@mail.com" required />
+      </div>
+      <div class="col-xs-24 col-md-12">
+        <label for="phone">Phone number<sup>*</sup></label>
+        <input class="form-control" id="phone" maxlength="40" name="phone" type="text" placeholder="805-555-1212" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-24 col-md-12">
+        <label>Company name</label>
+        <input class="form-control" id="company" maxlength="40" name="company" type="text" placeholder="i.e. Premier Property Management">
+      </div>
+      <div class="col-xs-24 col-md-12">
+        <label>Location</label>
+        <div class="form-group">
+          <div class="col-xs-24 col-md-12">
+            <input class="form-control" id="city" maxlength="40" name="city" type="text" placeholder="City">
+          </div>
+          <div class="col-xs-24 col-md-12">
+            <input class="form-control" id="state" maxlength="20" name="state" type="text" placeholder="State">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-24">
+        <label>Message</label>
+        <textarea class="form-control" name="00N50000003V4JP" row="10" placeholder="... and an optional message. Where you heard about us, etc."></textarea>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-24">
+        <button type="submit" id="landlord-submit" name="submit" class="btn btn-block btn-primary">Send Message</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+$(function() {
+  $("#leadsource").val(getParameterByName("LeadSource"));
+});
+</script>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
