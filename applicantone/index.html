@@ -5,13 +5,13 @@ hideFooter: true
 pageClass: applicantone
 ---
 
-<div class="container">
+<div class="container" style="margin-top:20px;">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-sm-12" style="text-align:center;">
       <img src="http://www.screeningone.com/assets/img/logo-158aec6a80ade3e0ac09d34de4d8596f.png"/>
     </div>
-    <div class="col-xs-12">
-      <img src="https://www.applicantone.com/Contante/Images/ApplicantOne_logo_whitebackground.png"/>
+    <div class="col-sm-12" style="text-align:center;">
+      <img src="https://www.applicantone.com/Content/Images/ApplicantOne_logo_whitebackground.png"/>
     </div>
   </div>
   <div class="row">
@@ -63,13 +63,16 @@ pageClass: applicantone
         <label for="email">Enter email address<sup>*</sup></label>
         <input class="form-control" id="email" maxlength="80" name="email" type="text" placeholder="example@mail.com" required />
       </div>
+    </div>
+    
+    <div class="row">
       <div class="col-xs-24 col-md-12">
         <label for="phone">Phone number<sup>*</sup></label>
         <input class="form-control" id="phone" maxlength="40" name="phone" type="text" placeholder="805-555-1212" required>
       </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="margin-top:15px;">
       <div class="col-xs-24 col-md-12">
         <label>Company name</label>
         <input class="form-control" id="company" maxlength="40" name="company" type="text" placeholder="i.e. Premier Property Management">
@@ -102,6 +105,9 @@ pageClass: applicantone
   </form>
 </div>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <script>
 function getParameterByName(name, url) {
     if (!url) url = window.location.href;
@@ -117,6 +123,3 @@ $(function() {
   $("#leadsource").val(getParameterByName("LeadSource"));
 });
 </script>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
