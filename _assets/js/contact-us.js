@@ -43,6 +43,7 @@
       Telephone: $form.find('#form-phone').val(),
       State: $form.find('#form-state').val(),
       City: $form.find('#form-city').val(),
+      Comments: $form.find('#form-comments').val()
     };
 
     $.ajax({ type: "POST", url: url, data: data, dataType: 'json'})
