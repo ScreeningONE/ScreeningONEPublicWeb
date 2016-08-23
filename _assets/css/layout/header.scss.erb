@@ -32,6 +32,10 @@ $custom-navbar-padding-vertical: (($navbar-height - $line-height-computed) / 2);
     @media(min-width: $grid-float-breakpoint) {
       padding: $custom-navbar-padding-vertical 0;
       height: 100px;
+
+      a {
+        padding: 0 13px; //readjusting from adding compliance corner
+      }
     }
 
     > a.btn {
