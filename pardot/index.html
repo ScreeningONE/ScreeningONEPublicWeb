@@ -1,0 +1,111 @@
+---
+layout: clean
+title: Pardot
+pageClass: pardot
+hero:
+  small-title: Sub Header
+  title: Template Header Here
+  description: >
+    Lorem ipsum dolor sit amet, elit consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+---
+
+{% include partials/hero.html %}
+
+<div class="pardot-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-24 col-md-14">
+        <h2 class="title">Body Content Title</h2>
+
+        <img class="img-responsive" src="{% asset_path img/pardot-content.png %}">
+
+        <div class="pardot-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. 
+          </p>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+            doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+            veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+            porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea 
+          </p>
+        </div>
+      </div>
+      <div class="col-xs-24 col-md-10">
+        <form class="contact-form">
+          <div class="row form-header">
+            <div class="col-xs-24">
+              <label>Your Information</label>
+            </div>
+          </div>
+          <div class="row form-textbox">
+            <div class="col-xs-12">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-firstname" placeholder="Jane" name="first_name" maxlength="40">
+                <label for="form-firstname">First</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-lastname" placeholder="Doe" name="last_name" maxlength="40">
+                <label for="form-lastname">Last</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-title" placeholder="CTO" name="title" maxlength="40">
+                <label for="form-title">Title</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-phone" placeholder="(000) 000-0000" name="phone" maxlength="40">
+                <label for="form-phone">Phone Number</label>
+              </div>
+            </div>
+          </div>
+          <div class="row form-textbox">
+            <div class="col-xs-24">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-company" placeholder="ScreeningOne" name="company" maxlength="40">
+                <label for="form-company">Company Name</label>
+              </div>
+            </div>
+          </div>
+          <div class="row form-textbox">
+            <div class="col-xs-12">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-state" placeholder="NY" name="state" maxlength="40">
+                <label for="form-state">State</label>
+              </div>
+            </div>
+            <div class="col-xs-12">
+              <div class="form-textbox-wrap">
+                <input type="text" id="form-employees" placeholder="100" name="employees" maxlength="40">
+                <label for="form-employees"># of Employees</label>
+              </div>
+            </div>
+          </div>
+          <div class="row form-footer">
+            <div class="col-xs-24">
+              <input type="submit" class="btn btn-primary btn-block" value="Get it Now">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+.page.pardot {
+  @include hero-bg("<%= asset_path 'img/hero/home-hero.png' %>");
+
+  .hero {
+    text-align: left;
+
+    .wrapper-content {
+      @extend .container;
+    }
+
+    .desc {
+      margin-left: 0;
+      margin-right: 0;
+      width: 600px;
+    }
+
+    .icon-arrow-down {
+      display: none;
+    }
+  }
+}
+
+.pardot-content {
+  padding: 50px 0;
+
+  h2.title {
+    font-weight: 300;
+    color: $secondary-color;
+    margin: 0 0 30px;
+  }
+
+  img {
+    margin:  0 0 30px;
+  }
+
+  .pardot-text {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: -moz-linear-gradient(top,  rgba(255,255,255,0.01) 0%, rgba(255,255,255,1) 100%);
+      background: -webkit-linear-gradient(top,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
+      background: linear-gradient(to bottom,  rgba(255,255,255,0.01) 0%,rgba(255,255,255,1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#03ffffff', endColorstr='#ffffff',GradientType=0 );
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 160%;
+  }
+
+  form.contact-form {
+    background: #fff;
+    margin-top: 30px;
+
+    @media(min-width: $screen-sm-min) {
+      margin-top: -200px;
+    }
+
+    .form-header {
+      padding: 20px 5px;
+
+      label {
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+
+    .form-textbox {
+      & > div {
+        &:nth-child(3n) {
+          border-right: 1px solid $contact-border-color;
+        }
+
+        &:nth-child(2n), &:last-child {
+          border-right: 0;
+        }
+      }
+
+      .form-textbox-wrap {
+        padding: 15px;
+        label {
+          padding-top: 15px;
+        }
+      }
+    }
+
+    .form-footer {
+      .btn {
+        padding: 25px 0;
+      }
+    }
+  }
+}

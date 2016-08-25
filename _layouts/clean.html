@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="clean-layout {% if page.pageClass %}page {{ page.pageClass }}{% endif %}">
+    <div class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24">
+            <a class="navbar-brand" href="{{ site.baseurl }}/"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{ content }}
+
+    {% include partials/color-strip.html %}
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 col-md-11">
+            <div class="footer-brand"></div>
+
+            <p>
+              <strong>ScreeningOne</strong> offers a comprehensive suite if screening
+              solutions and we have one of the most extensive networks of record sources in
+              the industry
+            </p>
+          </div>
+
+          <div class="col-xs-24 col-md-6 col-md-offset-7">
+            <h2>Contact</h2>
+            <p><strong>Call Us now: 888.327.6511</strong></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
