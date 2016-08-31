@@ -1,0 +1,34 @@
+$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+$brand-primary: #8f4db6;
+$secondary-color: #364f70;
+$secondary-darker: #2b333f;
+
+$grid-float-breakpoint: 1148px; //from added "compliance corner tab"
+$grid-columns: 24;
+
+$logo: "<%= asset_data_uri 'img/logo.png' %>";
+$icon-sprite: "<%= asset_data_uri 'img/icons.png' %>";
+$clean-footer-logo: "<%= asset_data_uri 'img/clean-footer-logo.png' %>";
+
+$navbar-height: 100px;
+$navbar-default-bg: #fff;
+$navbar-default-color: #5d6166;
+$navbar-default-link-color: $navbar-default-color;
+$navbar-padding-vertical: 0;
+$navbar-default-link-active-bg: $navbar-default-bg;
+
+$btn-font-weight: 700;
+$btn-default-color: $brand-primary;
+$btn-primary-color: #fff;
+$btn-primary-bg: $brand-primary;
+$btn-primary-border: transparent;
+$btn-border-radius-base: 20px;
+
+$footer-color: #404950;
+
+@mixin font-size($font-size) {
+  font-size: $font-size;
+  line-height: floor(($font-size * $line-height-base));
+}
