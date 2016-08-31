@@ -15,4 +15,6 @@ script:
  - PUBLISH_AWS_ACCESS_KEY_ID=$STAGING_PUBLISH_AWS_ACCESS_KEY_ID PUBLISH_AWS_SECRET_ACCESS_KEY=$STAGING_PUBLISH_AWS_SECRET_ACCESS_KEY PUBLISH_S3_BUCKET=$STAGING_PUBLISH_S3_BUCKET PUBLISH_S3_KEY_PREFIX=screeningone ./bin/s3_website push > /dev/null
 notifications:
   slack:
+    rooms:
+      - brandedcrate:yWvI4aiWjb3iX7v596001H5Y#screeningone-client
     on_success: always
