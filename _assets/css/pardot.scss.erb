@@ -10,9 +10,9 @@ $secondary-darker: #2b333f;
 $grid-float-breakpoint: 1148px; //from added "compliance corner tab"
 $grid-columns: 24;
 
-$logo: "<%= asset_path 'img/logo.png' %>";
-$icon-sprite: "<%= asset_path 'img/icons.png' %>";
-$clean-footer-logo: "<%= asset_path 'img/clean-footer-logo.png' %> no-repeat center";
+$logo: "<%= asset_data_uri 'img/logo.png' %>";
+$icon-sprite: "<%= asset_data_uri 'img/icons.png' %>";
+$clean-footer-logo: "<%= asset_data_uri 'img/clean-footer-logo.png' %> no-repeat center";
 
 $navbar-height: 100px;
 $navbar-default-bg: #fff;
@@ -43,7 +43,6 @@ $footer-color: #404950;
   "layout/header",
   "layout/footer",
   "layout/layout",
-  "layout/simple-page",
   "layout/clean"
 ;
 
@@ -60,23 +59,5 @@ $footer-color: #404950;
 ;
 
 @import
-  "page/home",
-  "page/how-it-works",
-  "page/the-difference",
-  "page/pre-employment-screening",
-  "page/drug-testing",
-  "page/applicant-tracking",
-  "page/faqs",
-  "page/team",
-  "page/resources",
-  "page/roi",
-  "page/sitemap",
-  "page/contact",
-  "page/rent-track",
-  'page/compliance-corner',
   'page/pardot'
-;
-
-@import
-  "layout/proposal"
 ;
