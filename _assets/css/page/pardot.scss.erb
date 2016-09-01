@@ -13,11 +13,11 @@ $contact-border-color: #c8c8c8;
     .desc {
       margin-left: 0;
       margin-right: 0;
-      width: 600px;
-    }
+      width: 500px;
 
-    .icon-arrow-down {
-      display: none;
+      @media(min-width: $screen-lg-min) {
+        width: 600px;
+      }
     }
   }
 }
@@ -32,7 +32,10 @@ $contact-border-color: #c8c8c8;
   }
 
   img {
-    margin:  0 0 30px;
+    display: block;
+    margin: 0 0 30px;
+    max-width: 100%;
+    height: auto;
   }
 
   .pardot-text {
@@ -63,7 +66,7 @@ $contact-border-color: #c8c8c8;
     background: #fff;
     margin-top: 30px;
 
-    @media(min-width: $screen-sm-min) {
+    @media(min-width: $screen-md-min) {
       margin-top: -200px;
     }
 
