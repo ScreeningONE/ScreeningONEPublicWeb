@@ -6,9 +6,17 @@ hero:
   small-title: Legal
   title: Compliance Corner
   description: >
-    Lorem ipsum dolor sit amet, elit consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Lorem ipsum dolor sit amet, elit consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ---
+<script>
+if (window.location.search === '?success=true') {
+  document.write('<div style="margin:20px;" class="alert alert-success alert-dismissible" role="alert">');
+  document.write('  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>');
+  document.write('  Great! You’re subscribed and will receive the latest compliance requirements each month.');
+  document.write('</div>');
+}
+</script>
 
 {% include partials/hero.html %}
 
@@ -40,7 +48,12 @@ hero:
           <div class="regular-updates-header">
             <p>Staying up-to-date with the <strong>latest compliance requirements</strong></p>
           </div>
-          <form>
+          <script>
+            var retUrl = window.location.href;
+            retUrl.replace(window.location.search, '');
+            retUrl += '?success=true';
+            document.write('<form method="post" action="http://go.screeningone.com/l/166622/2016-08-30/47lg3?success_location=' + encodeURIComponent(retUrl) + '">');
+          </script>
             <div class="form-textbox-wrap">
               <input type="email" id="form-email" placeholder="example@mail.com" name="email" maxlength="80">
               <label for="form-email">Email address</label>
@@ -50,7 +63,9 @@ hero:
               <label for="form-phone">Phone number</label>
             </div>
             <button class="btn btn-primary btn-block">Keep Me Up-to-date</button>
-          </form>
+          <script>
+            document.write('</form>');
+          </script>
         </div>
 
         <div class="earlier-reports">
