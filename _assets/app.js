@@ -4,3 +4,4 @@
 //= require js/faq.js
 //= require js/resource-nav.js
 //= require js/contact-us.js
+//= require js/compliance-corner-form.js

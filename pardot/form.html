@@ -5,6 +5,19 @@
       </div>
     </div>
     <div class="row form-textbox">
+      %%form-if-thank-you%%
+        <div class="col-xs-24 thank-you-container">
+          %%form-thank-you-content%%
+          %%form-thank-you-code%%
+        </div>
+      %%form-end-if-thank-you%%
+      %%form-if-error%%
+        <div class="col-xs-24">
+          <p class="error-warning text-danger">Please correct the errors below:</p>
+        </div>
+      %%form-end-if-error%%
+    </div>
+    <div class="row form-textbox">
       %%form-if-display-form%%
         %%form-before-form-content%%
           %%form-start-loop-fields%%
@@ -14,6 +27,9 @@
                 %%form-if-field-label%%
                   <label for="%%form-field-id%%">%%form-field-label%%</label>
                 %%form-end-if-field-label%%
+                %%form-field-if-error%%
+                  <p class="input-error text-danger" title="%%form-field-error-message%%">%%form-field-error-message%%</p>
+                %%form-field-end-if-error%%
               </div>
             </div>
           %%form-end-loop-fields%%
