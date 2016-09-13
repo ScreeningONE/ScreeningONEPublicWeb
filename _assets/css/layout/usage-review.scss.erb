@@ -292,4 +292,135 @@
       max-width: 100%;
     }
   }
+
+  .referral-program {
+    background: #f5f8fb;
+    padding: 60px 0;
+
+    .small-title {
+      margin: 15px 0 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 160%;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: block;
+      max-width: 100%;
+      width: 360px;
+      text-align: center;
+      font-weight: bold;
+      color: $brand-primary;
+      background: transparent;
+      border: 1px solid $brand-primary;
+      border-radius: 0;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+
+    .panel {
+      padding: 20px;
+      background: #fff;
+      border: 1px solid #c8c8c8;
+
+      .small-title {
+        margin-top: 0;
+      }
+
+      ul {
+        li {
+          margin-bottom: 20px;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .review-form {
+    padding: 50px 0;
+
+    .title {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0 0 40px;
+      text-align: center;
+    }
+
+    .contact-form .form-footer {
+      border: 0;
+    }
+
+    .form-checkbox-wrap label:after {
+      height: 9px;
+      line-height: 6px;
+      vertical-align: middle;
+    }
+  }
+
+  .schedule-review {
+    background: #362c41;
+    padding: 80px 0;
+
+    .panel {
+      background: #fff;
+      
+      &-content {
+        padding: 40px 15px 20px;
+        width: 600px;
+        margin: 0 auto;
+        max-width: 100%;
+
+        .title {
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: #449bff;
+          font-size: 16px;
+          margin-bottom: 20px;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        .cog {
+          display: block;
+          margin: 0 auto 30px;
+          background: url("<%=asset_path('img/proposal/feature-small-icons.png')%>") no-repeat 0 -2px;
+          width: 46px;
+          height: 46px;
+        }
+
+        p {
+          text-align: center;
+          color: #9d9ea5;
+          font-size: 16px;
+          line-height: 160%;
+          margin-bottom: 20px;
+        }
+      }
+
+      &-footer {
+        padding: 20px 0;
+        background: #f9f9fb;
+        color: #2b333f;
+        text-align: center;
+
+        a {
+          color: #2b333f;
+          font-size: 16px;
+          font-weight: bold;
+          display: inline-block;
+        }
+
+        .dropdown-arrow {
+          display: inline-block;
+          background: url("<%=asset_path('img/icons.png')%>") no-repeat -60px -84px;
+          width: 11px;
+          height: 7px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
 }
