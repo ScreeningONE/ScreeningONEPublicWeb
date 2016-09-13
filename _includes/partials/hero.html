@@ -11,6 +11,9 @@
         </ul>
       {% endif %}
       <div class="desc"><p>{{ page.hero.description }}</p></div>
+      {% if page.review %}
+        <div class="review">{{ page.review }} Usage Review</div>
+      {% endif %}
       <div class="icon-arrow-down"></div>
     </div>
   </div>

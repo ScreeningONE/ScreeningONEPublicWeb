@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="usage-review {% if page.pageClass %}page {{ page.pageClass }}{% endif %}">
+    <div class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 text-center">
+            <a class="navbar-brand" href="{{ site.baseurl }}/"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    {% include partials/hero.html %}
+
+    <div class="call-us-strip">
+      Superior, proven, compliant <strong>screening solutions</strong>.
+    </div>
+
+    <div class="review-expect">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-24 col-md-20 col-md-offset-2">
+            <h2 class="title">What to expect in this review</h2>
+            {{ page.toExpect | markdownify }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% include partials/color-strip.html %}
+    {{ content }}
+  </body>
+</html>
